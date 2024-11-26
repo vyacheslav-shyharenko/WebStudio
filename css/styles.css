@@ -51,12 +51,18 @@ p {
 }
 
 /* H3 */
-.card-subtitles {
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 500;
-  color: #2e2f42;
+
+.benefits-item .card-subtitles {
   margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 1158px) {
+  .benefits-item .card-subtitles {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #2e2f42;
+  }
 }
 
 .container {
@@ -78,13 +84,7 @@ p {
 }
 
 .section {
-  padding: 120px 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .section {
-    padding: 96px 0;
-  }
+  padding: 96px 0;
 }
 
 @media only screen and (min-width: 1158px) {
@@ -398,6 +398,13 @@ header {
 .benefits-text {
   font-weight: 500;
 }
+
+@media only screen and (min-width: 1158px) {
+  .benefits-text {
+    font-weight: 400;
+  }
+}
+
 /* #endregion BENEFITS */
 
 /* #region TEAM INFO */
