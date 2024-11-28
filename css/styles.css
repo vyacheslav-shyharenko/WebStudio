@@ -1,4 +1,9 @@
 /* #region BASE and COMMON STYLES */
+
+html {
+  scrollbar-width: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -6,10 +11,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-.hiden {
-  display: none;
 }
 
 a,
@@ -56,17 +57,8 @@ p {
 
 /* H3 */
 
-.benefits-item .card-subtitles {
+.card-subtitles {
   margin-bottom: 8px;
-}
-
-@media only screen and (min-width: 1158px) {
-  .benefits-item .card-subtitles {
-    font-size: 20px;
-    line-height: 1.2;
-    font-weight: 500;
-    color: #2e2f42;
-  }
 }
 
 .container {
@@ -139,7 +131,7 @@ p {
   color: #f4f4fd;
 }
 
-.common-svg {
+.social-svg {
   fill: #f4f4fd;
 }
 
@@ -399,6 +391,15 @@ header {
   }
 }
 
+@media only screen and (min-width: 1158px) {
+  .benefits-subtitle {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #2e2f42;
+  }
+}
+
 .benefits-text {
   font-weight: 500;
 }
@@ -626,6 +627,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 16px;
+  margin: 0;
 }
 .f-social-link {
   display: flex;
@@ -638,8 +640,8 @@ header {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+.f-social-link:hover,
+.f-social-link:focus {
   background-color: #31d0aa;
 }
 
