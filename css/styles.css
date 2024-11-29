@@ -1,5 +1,9 @@
 /* #region BASE  */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
@@ -264,15 +268,13 @@ header {
 }
 
 /* Common */
-.header-item:first-child .header-link {
+.header-item {
   position: relative;
-  color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* For tablet and more */
 @media only screen and (min-width: 768px) {
-  .header-item:first-child .header-link::after {
+  .header-item .header-link::after {
     content: '';
     position: absolute;
     left: 0;
@@ -281,9 +283,14 @@ header {
     height: 4px;
     border-radius: 2px;
     background-color: #404bbf;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scaleX(0);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 300ms ease-in-out;
   }
+}
+
+.header-item.active .header-link::after {
+  transform: scaleX(1);
 }
 
 /* For mobile */
