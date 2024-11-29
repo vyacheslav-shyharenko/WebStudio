@@ -1059,6 +1059,8 @@ input[type='checkbox']:focus-visible + label .checkbox-span {
 }
 
 .btn-mobile-exit {
+  background-color: transparent;
+  fill: #000000;
 }
 
 .mobile-menu-list {
