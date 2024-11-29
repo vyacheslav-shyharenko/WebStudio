@@ -12,6 +12,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet" />
+
     <title>Preject-1</title>
   </head>
   <body>
@@ -23,7 +24,7 @@
           <a class="header-logo logo-common" href="./index.html"
             >Web<span class="dark-logo">Studio</span>
           </a>
-          <button class="btn-mobile-menu">
+          <button class="btn-mobile-menu js-open-menu">
             <svg class="menu-svg" width="24" height="24">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
@@ -64,7 +65,9 @@
       <!-- HERO   -->
       <section class="banner section container">
         <h1 class="banner-title">Effective Solutions for Your Business</h1>
-        <button type="button" class="btn bunner-btn">Order Service</button>
+        <button type="button" class="btn bunner-btn js-open-modal">
+          Order Service
+        </button>
       </section>
 
       <!-- BENEFITS -->
@@ -546,10 +549,10 @@
     </footer>
 
     <!-- MODAL -->
-    <div class="backdrop is-open">
-      <div class="modal">
+    <div class="backdrop modalOverlay">
+      <div class="modal js-modal">
         <!-- Button exit modal -->
-        <button type="button" class="button-exit">
+        <button type="button" class="button-exit js-close-modal">
           <svg class="modal-icon-exit" width="8" height="8">
             <use href="./images/icons.svg#icon-vector"></use>
           </svg>
@@ -557,11 +560,11 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <!-- Form modal -->
         <form class="form">
-          <div class="margin-box">
-            <label class="modal-label" for="user-name">Name</label>
-            <div class="position-box">
+          <div class="form-section">
+            <label class="input-label" for="user-name">Name</label>
+            <div class="relative-container">
               <input
-                class="modal-input"
+                class="form-input"
                 id="user-name"
                 name="user-name"
                 type="text" />
@@ -571,20 +574,20 @@
             </div>
           </div>
 
-          <div class="margin-box">
-            <label class="modal-label" for="phone">Phone</label>
-            <div class="position-box">
-              <input class="modal-input" name="phone" id="phone" type="tel" />
+          <div class="form-section">
+            <label class="input-label" for="phone">Phone</label>
+            <div class="relative-container">
+              <input class="form-input" name="phone" id="phone" type="tel" />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
 
-          <div class="margin-box">
-            <label class="modal-label" for="email">Email</label>
-            <div class="position-box">
-              <input class="modal-input" id="email" name="email" type="email" />
+          <div class="form-section">
+            <label class="input-label" for="email">Email</label>
+            <div class="relative-container">
+              <input class="form-input" id="email" name="email" type="email" />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
@@ -592,7 +595,7 @@
           </div>
 
           <div class="user-comment">
-            <label class="modal-label" for="user-comment">Comment</label>
+            <label class="input-label" for="user-comment">Comment</label>
             <textarea
               class="input-textarea"
               name="user-comment"
@@ -614,7 +617,7 @@
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a class="checkbox-linlk" href="#">Privacy Policy</a>
+              <a class="checkbox-link" href="#">Privacy Policy</a>
             </label>
           </div>
 
@@ -624,8 +627,8 @@
     </div>
 
     <!-- MOBILE MENU -->
-    <div class="mobile-menu menu-is-open">
-      <button class="mobile-menu-btn-exit button-exit" type="button">
+    <div class="mobile-menu js-menu">
+      <button class="btn-mobile-exit button-exit js-close-menu" type="button">
         <svg class="mobile-menu-svg modal-icon-exit" width="8" height="8">
           <use href="./images/icons.svg#icon-vector"></use>
         </svg>
@@ -689,5 +692,6 @@
         </li>
       </ul>
     </div>
+    <script src="/index.js"></script>
   </body>
 </html>
