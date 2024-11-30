@@ -2,7 +2,6 @@
 
 html {
   scroll-behavior: smooth;
-  scrollbar-width: none;
 }
 
 body {
@@ -673,22 +672,21 @@ header {
   text-align: center;
 }
 
+/* For tablet */
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer-content {
+    padding: 0 108px;
+  }
+}
+
 /* For tablet and more */
 @media only screen and (min-width: 768px) {
   .footer-content {
     flex-direction: row;
-    justify-content: center;
     align-items: baseline;
     gap: 112px 24px;
     text-align: left;
     flex-wrap: wrap;
-  }
-}
-
-/* For desktop and more */
-@media only screen and (min-width: 1158px) {
-  .footer-content {
-    gap: 0;
   }
 }
 
