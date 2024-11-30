@@ -247,7 +247,7 @@ header {
   display: none;
 }
 
-/* For tablet */
+/* For tablet and more */
 @media only screen and (min-width: 768px) {
   .header-list {
     display: flex;
@@ -256,7 +256,7 @@ header {
   }
 }
 
-/* For desktop */
+/* For desktop and more */
 @media only screen and (min-width: 1158px) {
   .header-list {
     margin-left: 76px;
