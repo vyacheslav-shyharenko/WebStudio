@@ -12,6 +12,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet" />
+    <script src="./js/index.js" defer></script>
     <title>Webstudio</title>
   </head>
   <body>
@@ -704,7 +705,7 @@
 
                 <p class="portfolio-hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  Manager App · Calorie Tracker App · Exotic Fruit commerce App
                   · Cloud Storage App
                 </p>
               </div>
@@ -885,8 +886,10 @@
                     href="./images/vector-graphics/icons.svg#icon-vector-4"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="checkbox-link" href="#">Privacy Policy</a>
+              <span>
+                I accept the terms and conditions of the
+                <a class="checkbox-link" href="#">Privacy Policy</a>
+              </span>
             </label>
           </div>
 
@@ -896,83 +899,92 @@
     </div>
 
     <!-- MOBILE MENU -->
-    <div class="mobile-menu js-menu">
-      <button class="btn-mobile-exit button-exit js-close-menu" type="button">
-        <svg class="mobile-menu-svg modal-icon-exit" width="8" height="8">
-          <use href="./images/vector-graphics/icons.svg#icon-vector"></use>
-        </svg>
-      </button>
-      <ul class="mobile-menu-list">
-        <li class="header-item">
-          <a href="#start" class="header-link">Studio</a>
-        </li>
-        <li class="header-item">
-          <a href="#portfolio" class="header-link">Portfolio</a>
-        </li>
-        <li class="header-item">
-          <a href="#contacts" class="header-link">Contacts</a>
-        </li>
-      </ul>
-      <ul class="mobile-menu-address-list">
-        <li class="mobile-menu-address-item header-address-item">
-          <a
-            class="mobile-menu-address-link header-address-link"
-            href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="mobile-menu-address-item header-address-item">
-          <a
-            class="mobile-menu-address-link header-address-link"
-            href="tel:+110001111111"
-            >+11 (000) 111-11-11</a
-          >
-        </li>
-      </ul>
-      <!-- Mobile Social -->
-      <ul class="mobile-social social">
-        <li class="social-item">
-          <a
-            class="social-link"
-            href="https://www.instagram.com/"
-            target="_blank">
-            <svg class="social-svg common-svg" width="24" height="24">
-              <use
-                href="./images/vector-graphics/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="social-link" href="https://x.com/?lang=uk" target="_blank">
-            <svg class="social-svg common-svg" width="24" height="24">
-              <use href="./images/vector-graphics/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-item">
-          <a
-            class="social-link"
-            href="https://www.facebook.com/"
-            target="_blank">
-            <svg class="social-svg common-svg" width="24" height="24">
-              <use
-                href="./images/vector-graphics/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-item">
-          <a
-            class="social-link"
-            href="https://ua.linkedin.com/"
-            target="_blank">
-            <svg class="social-svg common-svg" width="24" height="24">
-              <use
-                href="./images/vector-graphics/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+    <div class="backdrop-mobile js-menu">
+      <div class="mobile-menu container">
+        <button class="btn-mobile-exit button-exit js-close-menu" type="button">
+          <svg class="mobile-menu-svg modal-icon-exit" width="8" height="8">
+            <use href="./images/vector-graphics/icons.svg#icon-vector"></use>
+          </svg>
+        </button>
+        <nav class="mobile-nav">
+          <ul class="mobile-menu-list">
+            <li class="header-item">
+              <a href="#start" class="header-link">Studio</a>
+            </li>
+            <li class="header-item">
+              <a href="#portfolio" class="header-link">Portfolio</a>
+            </li>
+            <li class="header-item">
+              <a href="#contacts" class="header-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mobile-address">
+          <ul class="mobile-menu-address-list">
+            <li class="mobile-menu-address-item header-address-item">
+              <a
+                class="mobile-menu-address-link header-address-link"
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-menu-address-item header-address-item">
+              <a
+                class="mobile-menu-address-link header-address-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <!-- Mobile Social -->
+        <ul class="mobile-social social">
+          <li class="social-item">
+            <a
+              class="social-link"
+              href="https://www.instagram.com/"
+              target="_blank">
+              <svg class="social-svg common-svg" width="24" height="24">
+                <use
+                  href="./images/vector-graphics/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link"
+              href="https://x.com/?lang=uk"
+              target="_blank">
+              <svg class="social-svg common-svg" width="24" height="24">
+                <use
+                  href="./images/vector-graphics/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link"
+              href="https://www.facebook.com/"
+              target="_blank">
+              <svg class="social-svg common-svg" width="24" height="24">
+                <use
+                  href="./images/vector-graphics/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link"
+              href="https://ua.linkedin.com/"
+              target="_blank">
+              <svg class="social-svg common-svg" width="24" height="24">
+                <use
+                  href="./images/vector-graphics/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <script src="./js/index.js"></script>
   </body>
 </html>
