@@ -367,6 +367,8 @@ header {
 
 /* BGR For mobile */
 .banner {
+  max-width: 320px;
+  margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -392,6 +394,8 @@ header {
 /* BGR For tablet  */
 @media only screen and (min-width: 768px) {
   .banner {
+    max-width: 768px;
+
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -414,6 +418,8 @@ header {
 /* BGR For desktop */
 @media only screen and (min-width: 1158px) {
   .banner {
+    max-width: 1440px;
+
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -744,7 +750,7 @@ header {
   .footer-content {
     flex-direction: row;
     align-items: baseline;
-    gap: 112px 24px;
+    gap: 72px 24px;
     text-align: left;
     flex-wrap: wrap;
   }
@@ -1180,6 +1186,7 @@ input[type='checkbox']:focus-visible + label .checkbox-span {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
+  font-style: normal;
 }
 
 .mobile-menu-address-item:first-child .mobile-menu-address-link {
