@@ -1,3 +1,5 @@
+import './scss/main.scss';
+
 // *** МОДАЛЬНЕ ВІКНО ***
 const modalOverlay = document.querySelector('.modalOverlay');
 const modal = document.querySelector('.js-modal');
