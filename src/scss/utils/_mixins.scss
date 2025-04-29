@@ -1,0 +1,61 @@
+@use '../utils/variables' as v;
+
+// Mixin for viewport
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (min-width: v.$breakpoint-tablet) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (min-width: v.$breakpoint-desktop) {
+      @content;
+    }
+  }
+}
+
+// Mixin for retina
+@mixin background-with-retina($img, $img2x) {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url($img);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url($img2x);
+  }
+}
+
+// Mixin for buttons
+@mixin button-variant($bg-color, $hover-color, $text-color: #fff) {
+  background-color: $bg-color;
+  color: $text-color;
+
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  padding: 2px 0;
+
+  transition: background-color 250ms ease;
+
+  margin: 0 auto;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+}

@@ -1,0 +1,23 @@
+@use '../utils/variables' as v;
+
+body {
+  font-family: v.$font-primary;
+  color: v.$color-dark;
+  background-color: v.$bg-light;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.section-titles {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  color: v.$color-secondary;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.card-subtitles {
+  margin-bottom: 8px;
+}

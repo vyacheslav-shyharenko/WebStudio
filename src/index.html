@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>WebStudio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <nav class="header__nav">
+          <a class="header__logo" href="./index.html"
+            >Web<span class="header__logo--accent">Studio</span></a
+          >
+          <button class="header__menu-btn js-open-menu">
+            <svg class="header__menu-icon" width="24" height="24">
+              <use
+                href="./assets/images/vector-graphics/icons.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link js-active" href="#start">Studio</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link js-active" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link js-active" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="header__address">
+          <ul class="header__address-list">
+            <li class="header__address-item">
+              <a class="header__address-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="header__address-item">
+              <a class="header__address-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="start">
+        <h1 class="hero__title">Effective Solutions for Your Business</h1>
+        <button class="btn hero__btn js-open-modal" type="button">
+          Order Service
+        </button>
+      </section>
+
+      <section class="benefits section">
+        <div class="benefits__container container">
+          <h2 class="benefits__title visually-hidden">Benefits</h2>
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <div class="benefits__icon-box">
+                <svg class="benefits__icon" width="64" height="64">
+                  <use
+                    href="./assets/images/vector-graphics/icons.svg#icon-antenna"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="benefits__subtitle">Strategy</h3>
+              <p class="benefits__text">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <!-- Інші benefits__item за таким же принципом -->
+          </ul>
+        </div>
+      </section>
+
+      <section class="team section">
+        <div class="team__container container">
+          <h2 class="team__title">Our Team</h2>
+          <ul class="team__list">
+            <li class="team__item">
+              <img
+                class="team__img"
+                src="./assets/images/team-info/img-1.jpg"
+                alt="Man Product Designer"
+                width="264"
+              />
+              <div class="team__info">
+                <h3 class="team__name">Mark Guerrero</h3>
+                <p class="team__role">Product Designer</p>
+                <ul class="social">
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                    >
+                      <svg class="social__icon" width="16" height="16">
+                        <use
+                          href="./assets/images/vector-graphics/icons.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- Інші соцмережі -->
+                </ul>
+              </div>
+            </li>
+            <!-- Інші team__item за таким же принципом -->
+          </ul>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="portfolio">
+        <div class="portfolio__container container">
+          <h2 class="portfolio__title">Our Portfolio</h2>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <div class="portfolio__image-wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./assets/images/portfolio/banking_app_desk.jpg    1x,
+                      ./assets/images/portfolio/banking_app_desk@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="portfolio__img"
+                    src="./assets/images/portfolio/banking_app_mob.jpg"
+                    alt="Banking App"
+                    width="360"
+                  />
+                </picture>
+              </div>
+              <div class="portfolio__info">
+                <h3 class="portfolio__subtitle">Banking App</h3>
+                <p class="portfolio__category">App</p>
+              </div>
+            </li>
+            <!-- Інші portfolio__item -->
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <div class="footer__container container">
+        <div class="footer__logo-section">
+          <a class="footer__logo" href="./index.html"
+            >Web<span class="footer__logo--light">Studio</span></a
+          >
+          <p class="footer__description">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
+
+        <div class="footer__social-section">
+          <p class="footer__social-title">Social media</p>
+          <ul class="social">
+            <li class="social__item">
+              <a
+                class="social__link"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <svg class="social__icon" width="24" height="24">
+                  <use
+                    href="./assets/images/vector-graphics/icons.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <!-- Інші соцмережі -->
+          </ul>
+        </div>
+
+        <div class="footer__subscribe">
+          <p class="footer__subscribe-title">Subscribe</p>
+          <form class="footer__form">
+            <input
+              class="footer__input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button class="btn footer__btn" type="submit">
+              Subscribe
+              <svg class="footer__btn-icon" width="24" height="24">
+                <use
+                  href="./assets/images/vector-graphics/icons.svg#icon-send"
+                ></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

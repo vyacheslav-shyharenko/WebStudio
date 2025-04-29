@@ -1,0 +1,36 @@
+@use '../utils/mixins' as mix;
+
+.container {
+  max-width: 320px;
+  margin-inline: auto;
+  padding: 0 16px;
+
+  @include mix.respond-to(tablet) {
+    max-width: 768px;
+  }
+
+  @include mix.respond-to(desktop) {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+
+.section {
+  padding: 96px 0;
+
+  @include mix.respond-to(desktop) {
+    padding: 120px 0;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  clip-path: inset(100%);
+  border: 0;
+}
