@@ -14,5 +14,8 @@
     "vite": "^6.3.3",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-imagemin": "^0.6.1"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }

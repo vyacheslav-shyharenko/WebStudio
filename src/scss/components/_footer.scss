@@ -78,10 +78,17 @@
 
   &__social-link {
     fill: v.$color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: v.$color-primary;
+    border-radius: 5px;
+    padding: 10px;
+    fill: white;
 
     &:hover,
     &:focus {
-      fill: #31d0aa;
+      fill: #343534;
     }
   }
 

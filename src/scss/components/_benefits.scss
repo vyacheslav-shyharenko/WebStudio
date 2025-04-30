@@ -5,6 +5,7 @@
 @use '../utils/variables' as v;
 
 .benefits {
+  z-index: 999;
   &__list {
     display: grid;
     gap: 25px;
