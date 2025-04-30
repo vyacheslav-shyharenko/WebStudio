@@ -9,160 +9,129 @@
 .footer {
   background-color: #2e2f42;
   padding: 97px 0;
-}
 
-/* For desktop and more */
-@media only screen and (min-width: 1158px) {
-  .footer {
+  @include mix.respond-to(desktop) {
     padding: 100px 0;
   }
-}
 
-/* For mobile */
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
-  align-items: center;
-  text-align: center;
-}
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 
-/* For tablet */
-@media only screen and (min-width: 768px) and (max-width: 1157px) {
-  .footer-content {
-    padding: 0 108px;
+    @include mix.respond-to(desktop) {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: start;
+    }
   }
-}
+  &__logo-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
-/* For tablet and more */
-@media only screen and (min-width: 768px) {
-  .footer-content {
-    flex-direction: row;
-    align-items: baseline;
-    gap: 72px 24px;
+    @include mix.respond-to(tablet) {
+    }
+  }
+
+  &__logo {
+    @extend .logo;
+
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    &--accent {
+      color: v.$color-light;
+    }
+  }
+
+  &__description {
+    color: #f4f4fd;
     text-align: left;
-    flex-wrap: wrap;
+
+    @include mix.respond-to(tablet) {
+      max-width: 264px;
+    }
   }
-}
 
-@media only screen and (min-width: 1158px) {
-  .footer-content {
-    gap: 0;
+  &__social-section {
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
-}
 
-/* Common */
-.footer-logo {
-  margin-bottom: 17.5px;
-}
-
-@media only screen and (min-width: 1158px) {
-  .footer-logo-container {
-    margin-right: 120px;
+  &__social-list {
+    display: flex;
+    gap: 16px;
   }
-}
 
-/* For mobile */
-.footer-text {
-  color: #f4f4fd;
-  text-align: left;
-}
+  &__social-link {
+    fill: v.$color-primary;
 
-/* For tablet and more */
-@media only screen and (min-width: 768px) {
-  .footer-text {
-    max-width: 264px;
+    &:hover,
+    &:focus {
+      fill: #31d0aa;
+    }
   }
-}
 
-/* For desktop and more */
-@media only screen and (min-width: 1158px) {
-  .footer-links-container {
-    margin-right: auto;
+  &__subscribe {
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
-}
 
-/* Common */
-.f-social-list {
-  margin: 0;
-}
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 
-/* Common */
-.footer-social-text,
-.subscribe-text {
-  font-weight: 500;
-  color: #fff;
-  margin-bottom: 16px;
-}
-
-/* Common */
-.f-social-list {
-  gap: 16px;
-}
-
-/* Common */
-.f-social-link:hover,
-.f-social-link:focus {
-  background-color: #31d0aa;
-}
-
-/* For mobile */
-.subscribe-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-/* For tablet and more */
-@media only screen and (min-width: 768px) {
-  .subscribe-form {
-    flex-direction: row;
-    gap: 24px;
+    @include mix.respond-to(tablet) {
+      flex-direction: row;
+    }
   }
-}
 
-/* Common */
-.subscribe-email-input {
-  background-color: transparent;
-  border: 1px solid #fff;
-  border-radius: 4px;
-  width: 288px;
-  height: 40px;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: #fff;
-  padding-left: 16px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-}
+  &__input {
+    background-color: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 4px;
+    width: 288px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+    padding-left: 16px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 
-/* For tablet and desktop */
-@media only screen and (min-width: 768px) {
-  .subscribe-email-input {
-    width: 264px;
+    &::placeholder {
+      color: #fff;
+    }
+
+    @include mix.respond-to(tablet) {
+      width: 264px;
+    }
   }
-}
 
-/* Common */
-.subscribe-email-input::placeholder {
-  color: #fff;
-}
+  &__button {
+    @include mix.button-variant(v.$color-primary, v.$color-hover);
+    padding: 10px;
+  }
 
-/* Common */
-.subscribe-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  padding: 8px 24px;
-  min-width: 165px;
-  height: 40px;
-  text-align: center;
-  border: none;
-}
-
-/* Common */
-.subscribe-svg {
-  margin-left: 16px;
-  fill: #fff;
+  &__button-icon {
+    fill: #fff;
+  }
 }
