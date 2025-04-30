@@ -6,14 +6,15 @@ const observer = new IntersectionObserver(
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
       } else {
-        entry.target.classList.remove('show'); // Якщо хочеш, щоб зникало при скролі вгору
+        entry.target.classList.remove('show');
       }
     });
   },
   {
-    threshold: 0.2, // Скільки % елемента має з’явитись, щоб спрацювало
+    threshold: 0.1,
   }
 );
 
-const targets = document.querySelectorAll('.observer-target');
-targets.forEach(el => observer.observe(el));
+document
+  .querySelectorAll('.observer-target')
+  .forEach(el => observer.observe(el));
