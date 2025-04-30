@@ -1,0 +1,40 @@
+@use '../utils/mixins' as mix;
+
+@use '../base/common' as c;
+
+@use '../utils/variables' as v;
+
+@use '../base/typography' as t;
+
+.portfolio {
+  &__title {
+    @extend .title;
+  }
+
+  &__list {
+    display: grid;
+    gap: 25px;
+
+    @include mix.respond-to(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+
+      gap: 24px 50px;
+    }
+
+    @include mix.respond-to(desktop) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    text-align: center;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

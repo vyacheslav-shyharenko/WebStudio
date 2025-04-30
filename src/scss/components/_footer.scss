@@ -1,0 +1,168 @@
+@use '../utils/mixins' as mix;
+
+@use '../base/common' as c;
+
+@use '../utils/variables' as v;
+
+@use '../base/typography' as t;
+
+.footer {
+  background-color: #2e2f42;
+  padding: 97px 0;
+}
+
+/* For desktop and more */
+@media only screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+}
+
+/* For mobile */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
+  text-align: center;
+}
+
+/* For tablet */
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer-content {
+    padding: 0 108px;
+  }
+}
+
+/* For tablet and more */
+@media only screen and (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 72px 24px;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-content {
+    gap: 0;
+  }
+}
+
+/* Common */
+.footer-logo {
+  margin-bottom: 17.5px;
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-logo-container {
+    margin-right: 120px;
+  }
+}
+
+/* For mobile */
+.footer-text {
+  color: #f4f4fd;
+  text-align: left;
+}
+
+/* For tablet and more */
+@media only screen and (min-width: 768px) {
+  .footer-text {
+    max-width: 264px;
+  }
+}
+
+/* For desktop and more */
+@media only screen and (min-width: 1158px) {
+  .footer-links-container {
+    margin-right: auto;
+  }
+}
+
+/* Common */
+.f-social-list {
+  margin: 0;
+}
+
+/* Common */
+.footer-social-text,
+.subscribe-text {
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+/* Common */
+.f-social-list {
+  gap: 16px;
+}
+
+/* Common */
+.f-social-link:hover,
+.f-social-link:focus {
+  background-color: #31d0aa;
+}
+
+/* For mobile */
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* For tablet and more */
+@media only screen and (min-width: 768px) {
+  .subscribe-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+/* Common */
+.subscribe-email-input {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 288px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+  padding-left: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* For tablet and desktop */
+@media only screen and (min-width: 768px) {
+  .subscribe-email-input {
+    width: 264px;
+  }
+}
+
+/* Common */
+.subscribe-email-input::placeholder {
+  color: #fff;
+}
+
+/* Common */
+.subscribe-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 8px 24px;
+  min-width: 165px;
+  height: 40px;
+  text-align: center;
+  border: none;
+}
+
+/* Common */
+.subscribe-svg {
+  margin-left: 16px;
+  fill: #fff;
+}
