@@ -18,746 +18,728 @@
     />
   </head>
   <body>
-    <header class="header">
-      <div class="header__container container">
-        <nav class="header__nav">
-          <a class="header__logo" href="./index.html"
-            >Web<span class="header__logo--accent">Studio</span></a
-          >
-          <button class="header__menu-btn js-open-menu">
-            <svg class="header__menu-icon" width="24" height="24">
-              <use
-                href="./assets/images/vector-graphics/icons.svg#icon-menu"
-              ></use>
-            </svg>
-          </button>
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__link js-active" href="#start">Studio</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link js-active" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link js-active" href="#contacts">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-
-        <address class="header__address">
-          <ul class="header__address-list">
-            <li class="header__address-item">
-              <a class="header__address-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="header__address-item">
-              <a class="header__address-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
-    </header>
-
-    <main>
-      <!-- <section class="hero section" id="start">
-        <h1 class="hero__title">Effective Solutions for Your Business</h1>
-        <button class="hero__button js-open-modal" type="button">
-          Order Service
-        </button>
-      </section> -->
-
-      <section class="hero section observer-target">
-        <h1 class="hero__title observer-target observer-delay-1">
-          Effective Solutions for Your Business
-        </h1>
-        <button class="hero__button js-open-modal" type="button">
-          Order Service
-        </button>
-      </section>
-
-      <section class="benefits section">
-        <div class="benefits__container container">
-          <h2 class="benefits__title visually-hidden">Benefits</h2>
-          <ul class="benefits__list">
-            <li class="benefits__item observer-target observer-delay-1">
-              <div class="benefits__icon-box">
-                <svg class="benefits__icon" width="64" height="64">
-                  <use
-                    href="./assets/images/vector-graphics/icons.svg#icon-antenna"
-                  ></use>
-                </svg>
-              </div>
-              <h3 class="benefits__subtitle">Strategy</h3>
-              <p class="benefits__text">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
-            </li>
-            <li class="benefits__item observer-target observer-delay-2">
-              <div class="benefits__icon-box">
-                <svg class="benefits__icon" width="64" height="64">
-                  <use
-                    href="./assets/images/vector-graphics/icons.svg#icon-clock"
-                  ></use>
-                </svg>
-              </div>
-              <h3 class="benefits__subtitle">Punctuality</h3>
-              <p class="benefits__text">
-                We deliver on time by setting priorities and working efficiently
-                without compromising on quality.
-              </p>
-            </li>
-            <li class="benefits__item observer-target observer-delay-3">
-              <div class="benefits__icon-box">
-                <svg class="benefits__icon" width="64" height="64">
-                  <use
-                    href="./assets/images/vector-graphics/icons.svg#icon-diagram"
-                  ></use>
-                </svg>
-              </div>
-              <h3 class="benefits__subtitle">Analytics</h3>
-              <p class="benefits__text">
-                Data-driven decisions help us stay focused and make measurable
-                progress toward your business goals.
-              </p>
-            </li>
-            <li class="benefits__item observer-target observer-delay-4">
-              <div class="benefits__icon-box">
-                <svg class="benefits__icon" width="64" height="64">
-                  <use
-                    href="./assets/images/vector-graphics/icons.svg#icon-astronaut"
-                  ></use>
-                </svg>
-              </div>
-              <h3 class="benefits__subtitle">Innovation</h3>
-              <p class="benefits__text">
-                We are not afraid to explore new ideas, test bold concepts, and
-                bring creative energy to every project.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="team section">
-        <div class="team__container container">
-          <h2 class="team__title">Our Team</h2>
-
-          <ul class="team__list">
-            <li class="team__item observer-target observer-delay-1">
-              <img
-                class="team__photo"
-                src="./assets/images/team-info/img-1.jpg"
-                alt="Mark Guerrero - Product Designer"
-                width="264"
-              />
-              <div class="team__info">
-                <h3 class="team__name">Mark Guerrero</h3>
-                <p class="team__position">Product Designer</p>
-                <ul class="team__social-list">
-                  <li class="team__social-item">
-                    <a
-                      class="team__social-link"
-                      href="https://www.instagram.com/"
-                      target="_blank"
-                    >
-                      <svg class="team__social-icon" width="16" height="16">
-                        <use
-                          href="./assets/images/vector-graphics/icons.svg#icon-instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team__social-item">
-                    <a
-                      class="team__social-link"
-                      href="https://www.facebook.com/"
-                      target="_blank"
-                    >
-                      <svg class="team__social-icon" width="16" height="16">
-                        <use
-                          href="./assets/images/vector-graphics/icons.svg#icon-facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team__social-item">
-                    <a
-                      class="team__social-link"
-                      href="https://www.linkedin.com/"
-                      target="_blank"
-                    >
-                      <svg class="team__social-icon" width="16" height="16">
-                        <use
-                          href="./assets/images/vector-graphics/icons.svg#icon-linkedin"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team__social-item">
-                    <a
-                      class="team__social-link"
-                      href="https://x.com/"
-                      target="_blank"
-                    >
-                      <svg class="team__social-icon" width="16" height="16">
-                        <use
-                          href="./assets/images/vector-graphics/icons.svg#icon-twitter"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="team__item observer-target observer-delay-2">
-              <img
-                class="team__photo"
-                src="./assets/images/team-info/img-2.jpg"
-                alt="Tom Ford - Frontend Developer"
-                width="264"
-              />
-              <div class="team__info">
-                <h3 class="team__name">Tom Ford</h3>
-                <p class="team__position">Frontend Developer</p>
-                <ul class="team__social-list">
-                  <li class="team__social-item">
-                    <a
-                      class="team__social-link"
-                      href="https://www.instagram.com/"
-                      target="_blank"
-                    >
-                      <svg class="team__social-icon" width="16" height="16">
-                        <use
-                          href="./assets/images/vector-graphics/icons.svg#icon-instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team__social-item">
-                    <a
-                      class="team__social-link"
-                      href="https://www.facebook.com/"
-                      target="_blank"
-                    >
-                      <svg class="team__social-icon" width="16" height="16">
-                        <use
-                          href="./assets/images/vector-graphics/icons.svg#icon-facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team__social-item">
-                    <a
-                      class="team__social-link"
-                      href="https://www.linkedin.com/"
-                      target="_blank"
-                    >
-                      <svg class="team__social-icon" width="16" height="16">
-                        <use
-                          href="./assets/images/vector-graphics/icons.svg#icon-linkedin"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team__social-item">
-                    <a
-                      class="team__social-link"
-                      href="https://x.com/"
-                      target="_blank"
-                    >
-                      <svg class="team__social-icon" width="16" height="16">
-                        <use
-                          href="./assets/images/vector-graphics/icons.svg#icon-twitter"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="team__item observer-target observer-delay-3">
-              <img
-                class="team__photo"
-                src="./assets/images/team-info/img-3.jpg"
-                alt="Camila Garcia - Marketing Manager"
-                width="264"
-              />
-              <div class="team__info">
-                <h3 class="team__name">Camila Garcia</h3>
-                <p class="team__position">Marketing Manager</p>
-                <ul class="team__social-list">
-                  <li class="team__social-item">
-                    <a
-                      class="team__social-link"
-                      href="https://www.instagram.com/"
-                      target="_blank"
-                    >
-                      <svg class="team__social-icon" width="16" height="16">
-                        <use
-                          href="./assets/images/vector-graphics/icons.svg#icon-instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team__social-item">
-                    <a
-                      class="team__social-link"
-                      href="https://www.facebook.com/"
-                      target="_blank"
-                    >
-                      <svg class="team__social-icon" width="16" height="16">
-                        <use
-                          href="./assets/images/vector-graphics/icons.svg#icon-facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team__social-item">
-                    <a
-                      class="team__social-link"
-                      href="https://www.linkedin.com/"
-                      target="_blank"
-                    >
-                      <svg class="team__social-icon" width="16" height="16">
-                        <use
-                          href="./assets/images/vector-graphics/icons.svg#icon-linkedin"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team__social-item">
-                    <a
-                      class="team__social-link"
-                      href="https://x.com/"
-                      target="_blank"
-                    >
-                      <svg class="team__social-icon" width="16" height="16">
-                        <use
-                          href="./assets/images/vector-graphics/icons.svg#icon-twitter"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="team__item observer-target observer-delay-4">
-              <img
-                class="team__photo"
-                src="./assets/images/team-info/img-4.jpg"
-                alt="Daniel Wilson - UI/UX Designer"
-                width="264"
-              />
-              <div class="team__info">
-                <h3 class="team__name">Daniel Wilson</h3>
-                <p class="team__position">UI/UX Designer</p>
-                <ul class="team__social-list">
-                  <li class="team__social-item">
-                    <a
-                      class="team__social-link"
-                      href="https://www.instagram.com/"
-                      target="_blank"
-                    >
-                      <svg class="team__social-icon" width="16" height="16">
-                        <use
-                          href="./assets/images/vector-graphics/icons.svg#icon-instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team__social-item">
-                    <a
-                      class="team__social-link"
-                      href="https://www.facebook.com/"
-                      target="_blank"
-                    >
-                      <svg class="team__social-icon" width="16" height="16">
-                        <use
-                          href="./assets/images/vector-graphics/icons.svg#icon-facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team__social-item">
-                    <a
-                      class="team__social-link"
-                      href="https://www.linkedin.com/"
-                      target="_blank"
-                    >
-                      <svg class="team__social-icon" width="16" height="16">
-                        <use
-                          href="./assets/images/vector-graphics/icons.svg#icon-linkedin"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team__social-item">
-                    <a
-                      class="team__social-link"
-                      href="https://x.com/"
-                      target="_blank"
-                    >
-                      <svg class="team__social-icon" width="16" height="16">
-                        <use
-                          href="./assets/images/vector-graphics/icons.svg#icon-twitter"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="portfolio section" id="portfolio">
-        <div class="portfolio__container container">
-          <h2 class="portfolio__title">Our Portfolio</h2>
-          <ul class="portfolio__list">
-            <!-- Card-1-Banking-app -->
-            <li class="portfolio__item observer-target observer-delay-1">
-              <div class="portfolio__image-wrapper">
-                <picture>
-                  <source
-                    media="(min-width: 1158px)"
-                    srcset="
-                      ./assets/images/portfolio/banking_app_desk.jpg    1x,
-                      ./assets/images/portfolio/banking_app_desk@2x.jpg 2x
-                    "
-                  />
-                  <img
-                    class="portfolio__img"
-                    src="./assets/images/portfolio/banking_app_mob.jpg"
-                    alt="Banking App"
-                    width="360"
-                  />
-                </picture>
-              </div>
-              <div class="portfolio__info">
-                <h3 class="portfolio__subtitle">Banking App</h3>
-                <p class="portfolio__category">App</p>
-              </div>
-            </li>
-            <!--  Card-2-Cashless-Payment -->
-            <li class="portfolio__item observer-target observer-delay-2">
-              <div class="portfolio__image-wrapper">
-                <picture>
-                  <!-- Desktop -->
-                  <source
-                    media="(min-width: 1158px )"
-                    srcset="
-                      ./assets/images/portfolio/cashless_payment_desk.jpg    1x,
-                      ./assets/images/portfolio/cashless_payment_desk@2x.jpg 2x
-                    "
-                  />
-
-                  <!-- Tablet -->
-                  <source
-                    media="(min-width: 768px )"
-                    srcset="
-                      ./assets/images/portfolio/cashless_payment_tab.jpg    1x,
-                      ./assets/images/portfolio/cashless_payment_tab@2x.jpg 2x
-                    "
-                  />
-
-                  <!-- Mobile -->
-                  <source
-                    media="(max-width: 767px )"
-                    srcset="
-                      ./assets/images/portfolio/cashless_payment_mob.jpg    1x,
-                      ./assets/images/portfolio/cashless_payment_mob@2x.jpg 2x
-                    "
-                  />
-                  <img
-                    class="portfolio-img"
-                    src="./assets/images/portfolio/cashless_payment_mob.jpg"
-                    alt="Banking app"
-                    width="360"
-                  />
-                </picture>
-              </div>
-              <div class="portfolio__info">
-                <h3 class="portfolio__subtitle">Cashless Payment</h3>
-                <p class="portfolio__category">Marketing</p>
-              </div>
-            </li>
-            <!-- Card-3-Meditation-App -->
-            <li class="portfolio__item observer-target observer-delay-3">
-              <div class="portfolio__image-wrapper">
-                <picture>
-                  <!-- Desktop -->
-                  <source
-                    media="(min-width: 1158px )"
-                    srcset="
-                      ./assets/images/portfolio/meditation_app_desk.jpg    1x,
-                      ./assets/images/portfolio/meditation_app_desk@2x.jpg 2x
-                    "
-                  />
-
-                  <!-- Tablet -->
-                  <source
-                    media="(min-width: 768px )"
-                    srcset="
-                      ./assets/images/portfolio/meditation_app_tab.jpg    1x,
-                      ./assets/images/portfolio/meditation_app_tab@2x.jpg 2x
-                    "
-                  />
-
-                  <!-- Mobile -->
-                  <source
-                    media="(max-width: 767px )"
-                    srcset="
-                      ./assets/images/portfolio/meditation_app_mob.jpg    1x,
-                      ./assets/images/portfolio/meditation_app_mob@2x.jpg 2x
-                    "
-                  />
-                  <img
-                    class="portfolio-img"
-                    src="./assets/images/portfolio/meditation_app_mob.jpg"
-                    alt="Banking app"
-                    width="360"
-                  />
-                </picture>
-              </div>
-              <div class="portfolio__info">
-                <h3 class="portfolio__subtitle">Meditation App</h3>
-                <p class="portfolio__category">App</p>
-              </div>
-            </li>
-            <!-- Card-4-Taxi-Service -->
-            <li class="portfolio__item observer-target observer-delay-1">
-              <div class="portfolio__image-wrapper">
-                <picture>
-                  <!-- Desktop -->
-                  <source
-                    media="(min-width: 1158px )"
-                    srcset="
-                      ./assets/images/portfolio/taxi_service_desk.jpg    1x,
-                      ./assets/images/portfolio/taxi_service_desk@2x.jpg 2x
-                    "
-                  />
-
-                  <!-- Tablet -->
-                  <source
-                    media="(min-width: 768px )"
-                    srcset="
-                      ./assets/images/portfolio/taxi_service_tab.jpg    1x,
-                      ./assets/images/portfolio/taxi_service_tab@2x.jpg 2x
-                    "
-                  />
-
-                  <!-- Mobile -->
-                  <source
-                    media="(max-width: 767px )"
-                    srcset="
-                      ./assets/images/portfolio/taxi_service_mob.jpg    1x,
-                      ./assets/images/portfolio/taxi_service_mob@2x.jpg 2x
-                    "
-                  />
-                  <img
-                    class="portfolio-img"
-                    src="./assets/images/portfolio/taxi_service_mob.jpg"
-                    alt="Banking app"
-                    width="360"
-                  />
-                </picture>
-              </div>
-              <div class="portfolio__info">
-                <h3 class="portfolio__subtitle">Taxi Service</h3>
-                <p class="portfolio__category">Marketing</p>
-              </div>
-            </li>
-            <!-- Card-5-Screen-Illustrations -->
-            <li class="portfolio__item observer-target observer-delay-2">
-              <div class="portfolio__image-wrapper">
-                <picture>
-                  <!-- Desktop -->
-                  <source
-                    media="(min-width: 1158px )"
-                    srcset="
-                      ./assets/images/portfolio/screen_illustrations_desk.jpg    1x,
-                      ./assets/images/portfolio/screen_illustrations_desk@2x.jpg 2x
-                    "
-                  />
-
-                  <!-- Tablet -->
-                  <source
-                    media="(min-width: 768px )"
-                    srcset="
-                      ./assets/images/portfolio/screen_illustrations_tab.jpg    1x,
-                      ./assets/images/portfolio/screen_illustrations_tab@2x.jpg 2x
-                    "
-                  />
-
-                  <!-- Mobile -->
-                  <source
-                    media="(max-width: 767px )"
-                    srcset="
-                      ./assets/images/portfolio/screen_illustrations_mob.jpg    1x,
-                      ./assets/images/portfolio/screen_illustrations_mob@2x.jpg 2x
-                    "
-                  />
-                  <img
-                    class="portfolio-img"
-                    src="./assets/images/portfolio/screen_illustrations_mob.jpg"
-                    alt="Banking app"
-                    width="360"
-                  />
-                </picture>
-              </div>
-              <div class="portfolio__info">
-                <h3 class="portfolio__subtitle">Screen Illustrations</h3>
-                <p class="portfolio__category">Design</p>
-              </div>
-            </li>
-            <!-- Card-6-Online-Courses -->
-            <li class="portfolio__item observer-target observer-delay-3">
-              <div class="portfolio__image-wrapper">
-                <picture>
-                  <!-- Desktop -->
-                  <source
-                    media="(min-width: 1158px )"
-                    srcset="
-                      ./assets/images/portfolio/online_courses_desk.jpg    1x,
-                      ./assets/images/portfolio/online_courses_desk@2x.jpg 2x
-                    "
-                  />
-
-                  <!-- Tablet -->
-                  <source
-                    media="(min-width: 768px )"
-                    srcset="
-                      ./assets/images/portfolio/online_courses_tab.jpg    1x,
-                      ./assets/images/portfolio/online_courses_tab@2x.jpg 2x
-                    "
-                  />
-
-                  <!-- Mobile -->
-                  <source
-                    media="(max-width: 767px )"
-                    srcset="
-                      ./assets/images/portfolio/online_courses_mob.jpg    1x,
-                      ./assets/images/portfolio/online_courses_mob@2x.jpg 2x
-                    "
-                  />
-                  <img
-                    class="portfolio-img"
-                    src="src/assets/images/portfolio/online_courses_mob.jpg"
-                    alt="Banking app"
-                    width="360"
-                  />
-                </picture>
-              </div>
-              <div class="portfolio__info">
-                <h3 class="portfolio__subtitle">Online Courses</h3>
-                <p class="portfolio__category">Marketing</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer" id="contacts">
-      <div class="footer__container container">
-        <div class="footer__logo-section">
-          <a class="footer__logo" href="./index.html"
-            >Web<span class="footer__logo--accent">Studio</span></a
-          >
-          <p class="footer__description">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-
-        <div class="footer__social-section">
-          <p class="footer__social-title">Social media</p>
-          <ul class="footer__social-list">
-            <li class="footer__social-item">
-              <a
-                class="footer__social-link"
-                href="https://www.instagram.com/"
-                target="_blank"
-              >
-                <svg class="footer__social-icon" width="16" height="16">
-                  <use
-                    href="./assets/images/vector-graphics/icons.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a
-                class="footer__social-link"
-                href="https://www.facebook.com/"
-                target="_blank"
-              >
-                <svg class="footer__social-icon" width="16" height="16">
-                  <use
-                    href="./assets/images/vector-graphics/icons.svg#icon-facebook"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a
-                class="footer__social-link"
-                href="https://www.linkedin.com/"
-                target="_blank"
-              >
-                <svg class="footer__social-icon" width="16" height="16">
-                  <use
-                    href="./assets/images/vector-graphics/icons.svg#icon-linkedin"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a
-                class="footer__social-link"
-                href="https://x.com/"
-                target="_blank"
-              >
-                <svg class="footer__social-icon" width="16" height="16">
-                  <use
-                    href="./assets/images/vector-graphics/icons.svg#icon-twitter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer__subscribe">
-          <p class="footer__subscribe-title">Subscribe</p>
-          <form class="footer__form">
-            <input
-              class="footer__input"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-            />
-            <button class="footer__button" type="submit">
-              Subscribe
-              <svg class="footer__button-icon" width="20" height="20">
+    <div class="layout">
+      <header class="header">
+        <div class="header__container container">
+          <nav class="header__navigation">
+            <a class="header__logo" href="./index.html"
+              ><span class="header__logo--accent">Web</span
+              ><span>Studio</span></a
+            >
+            <button class="header__menu-btn js-open-menu">
+              <svg class="header__menu-icon" width="24" height="24">
                 <use
-                  href="./assets/images/vector-graphics/icons.svg#icon-send"
+                  href="./assets/images/vector-graphics/icons.svg#icon-menu"
                 ></use>
               </svg>
             </button>
-          </form>
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link js-active" href="#start">Studio</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link js-active" href="#portfolio"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="header__item">
+                <a class="header__link js-active" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="header__address">
+            <ul class="header__address-list">
+              <li class="header__address-item">
+                <a class="header__address-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="header__address-item">
+                <a class="header__address-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
-      </div>
-    </footer>
+      </header>
+      <main class="main">
+        <!-- <section class="hero section" id="start">
+          <h1 class="hero__title">Effective Solutions for Your Business</h1>
+          <button class="hero__button js-open-modal" type="button">
+            Order Service
+          </button>
+        </section> -->
+        <section class="hero section observer-target">
+          <h1 class="hero__title observer-target observer-delay-1">
+            Effective Solutions for Your Business
+          </h1>
+          <button class="hero__button js-open-modal" type="button">
+            Order Service
+          </button>
+        </section>
+        <section class="benefits section">
+          <div class="benefits__container container">
+            <h2 class="benefits__title visually-hidden">Benefits</h2>
+            <ul class="benefits__list">
+              <li class="benefits__item observer-target observer-delay-1">
+                <div class="benefits__icon-box">
+                  <svg class="benefits__icon" width="64" height="64">
+                    <use
+                      href="./assets/images/vector-graphics/icons.svg#icon-antenna"
+                    ></use>
+                  </svg>
+                </div>
+                <h3 class="benefits__subtitle">Strategy</h3>
+                <p class="benefits__text">
+                  Our goal is to identify the business problem to walk away with
+                  the perfect and creative solution.
+                </p>
+              </li>
+              <li class="benefits__item observer-target observer-delay-2">
+                <div class="benefits__icon-box">
+                  <svg class="benefits__icon" width="64" height="64">
+                    <use
+                      href="./assets/images/vector-graphics/icons.svg#icon-clock"
+                    ></use>
+                  </svg>
+                </div>
+                <h3 class="benefits__subtitle">Punctuality</h3>
+                <p class="benefits__text">
+                  We deliver on time by setting priorities and working
+                  efficiently without compromising on quality.
+                </p>
+              </li>
+              <li class="benefits__item observer-target observer-delay-3">
+                <div class="benefits__icon-box">
+                  <svg class="benefits__icon" width="64" height="64">
+                    <use
+                      href="./assets/images/vector-graphics/icons.svg#icon-diagram"
+                    ></use>
+                  </svg>
+                </div>
+                <h3 class="benefits__subtitle">Analytics</h3>
+                <p class="benefits__text">
+                  Data-driven decisions help us stay focused and make measurable
+                  progress toward your business goals.
+                </p>
+              </li>
+              <li class="benefits__item observer-target observer-delay-4">
+                <div class="benefits__icon-box">
+                  <svg class="benefits__icon" width="64" height="64">
+                    <use
+                      href="./assets/images/vector-graphics/icons.svg#icon-astronaut"
+                    ></use>
+                  </svg>
+                </div>
+                <h3 class="benefits__subtitle">Innovation</h3>
+                <p class="benefits__text">
+                  We are not afraid to explore new ideas, test bold concepts,
+                  and bring creative energy to every project.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="team section">
+          <div class="team__container container">
+            <h2 class="team__title">Our Team</h2>
+            <ul class="team__list">
+              <li class="team__item observer-target observer-delay-1">
+                <img
+                  class="team__photo"
+                  src="./assets/images/team-info/img-1.jpg"
+                  alt="Mark Guerrero - Product Designer"
+                  width="264"
+                />
+                <div class="team__info">
+                  <h3 class="team__name">Mark Guerrero</h3>
+                  <p class="team__position">Product Designer</p>
+                  <ul class="team__social-list">
+                    <li class="team__social-item">
+                      <a
+                        class="team__social-link"
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                      >
+                        <svg class="team__social-icon" width="16" height="16">
+                          <use
+                            href="./assets/images/vector-graphics/icons.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team__social-item">
+                      <a
+                        class="team__social-link"
+                        href="https://www.facebook.com/"
+                        target="_blank"
+                      >
+                        <svg class="team__social-icon" width="16" height="16">
+                          <use
+                            href="./assets/images/vector-graphics/icons.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team__social-item">
+                      <a
+                        class="team__social-link"
+                        href="https://www.linkedin.com/"
+                        target="_blank"
+                      >
+                        <svg class="team__social-icon" width="16" height="16">
+                          <use
+                            href="./assets/images/vector-graphics/icons.svg#icon-linkedin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team__social-item">
+                      <a
+                        class="team__social-link"
+                        href="https://x.com/"
+                        target="_blank"
+                      >
+                        <svg class="team__social-icon" width="16" height="16">
+                          <use
+                            href="./assets/images/vector-graphics/icons.svg#icon-twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="team__item observer-target observer-delay-2">
+                <img
+                  class="team__photo"
+                  src="./assets/images/team-info/img-2.jpg"
+                  alt="Tom Ford - Frontend Developer"
+                  width="264"
+                />
+                <div class="team__info">
+                  <h3 class="team__name">Tom Ford</h3>
+                  <p class="team__position">Frontend Developer</p>
+                  <ul class="team__social-list">
+                    <li class="team__social-item">
+                      <a
+                        class="team__social-link"
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                      >
+                        <svg class="team__social-icon" width="16" height="16">
+                          <use
+                            href="./assets/images/vector-graphics/icons.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team__social-item">
+                      <a
+                        class="team__social-link"
+                        href="https://www.facebook.com/"
+                        target="_blank"
+                      >
+                        <svg class="team__social-icon" width="16" height="16">
+                          <use
+                            href="./assets/images/vector-graphics/icons.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team__social-item">
+                      <a
+                        class="team__social-link"
+                        href="https://www.linkedin.com/"
+                        target="_blank"
+                      >
+                        <svg class="team__social-icon" width="16" height="16">
+                          <use
+                            href="./assets/images/vector-graphics/icons.svg#icon-linkedin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team__social-item">
+                      <a
+                        class="team__social-link"
+                        href="https://x.com/"
+                        target="_blank"
+                      >
+                        <svg class="team__social-icon" width="16" height="16">
+                          <use
+                            href="./assets/images/vector-graphics/icons.svg#icon-twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="team__item observer-target observer-delay-3">
+                <img
+                  class="team__photo"
+                  src="./assets/images/team-info/img-3.jpg"
+                  alt="Camila Garcia - Marketing Manager"
+                  width="264"
+                />
+                <div class="team__info">
+                  <h3 class="team__name">Camila Garcia</h3>
+                  <p class="team__position">Marketing Manager</p>
+                  <ul class="team__social-list">
+                    <li class="team__social-item">
+                      <a
+                        class="team__social-link"
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                      >
+                        <svg class="team__social-icon" width="16" height="16">
+                          <use
+                            href="./assets/images/vector-graphics/icons.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team__social-item">
+                      <a
+                        class="team__social-link"
+                        href="https://www.facebook.com/"
+                        target="_blank"
+                      >
+                        <svg class="team__social-icon" width="16" height="16">
+                          <use
+                            href="./assets/images/vector-graphics/icons.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team__social-item">
+                      <a
+                        class="team__social-link"
+                        href="https://www.linkedin.com/"
+                        target="_blank"
+                      >
+                        <svg class="team__social-icon" width="16" height="16">
+                          <use
+                            href="./assets/images/vector-graphics/icons.svg#icon-linkedin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team__social-item">
+                      <a
+                        class="team__social-link"
+                        href="https://x.com/"
+                        target="_blank"
+                      >
+                        <svg class="team__social-icon" width="16" height="16">
+                          <use
+                            href="./assets/images/vector-graphics/icons.svg#icon-twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="team__item observer-target observer-delay-4">
+                <img
+                  class="team__photo"
+                  src="./assets/images/team-info/img-4.jpg"
+                  alt="Daniel Wilson - UI/UX Designer"
+                  width="264"
+                />
+                <div class="team__info">
+                  <h3 class="team__name">Daniel Wilson</h3>
+                  <p class="team__position">UI/UX Designer</p>
+                  <ul class="team__social-list">
+                    <li class="team__social-item">
+                      <a
+                        class="team__social-link"
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                      >
+                        <svg class="team__social-icon" width="16" height="16">
+                          <use
+                            href="./assets/images/vector-graphics/icons.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team__social-item">
+                      <a
+                        class="team__social-link"
+                        href="https://www.facebook.com/"
+                        target="_blank"
+                      >
+                        <svg class="team__social-icon" width="16" height="16">
+                          <use
+                            href="./assets/images/vector-graphics/icons.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team__social-item">
+                      <a
+                        class="team__social-link"
+                        href="https://www.linkedin.com/"
+                        target="_blank"
+                      >
+                        <svg class="team__social-icon" width="16" height="16">
+                          <use
+                            href="./assets/images/vector-graphics/icons.svg#icon-linkedin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team__social-item">
+                      <a
+                        class="team__social-link"
+                        href="https://x.com/"
+                        target="_blank"
+                      >
+                        <svg class="team__social-icon" width="16" height="16">
+                          <use
+                            href="./assets/images/vector-graphics/icons.svg#icon-twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="portfolio section" id="portfolio">
+          <div class="portfolio__container container">
+            <h2 class="portfolio__title">Our Portfolio</h2>
+            <ul class="portfolio__list">
+              <!-- Card-1-Banking-app -->
+              <li class="portfolio__item observer-target observer-delay-1">
+                <div class="portfolio__image-wrapper">
+                  <picture>
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./assets/images/portfolio/banking_app_desk.jpg    1x,
+                        ./assets/images/portfolio/banking_app_desk@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./assets/images/portfolio/banking_app_mob.jpg"
+                      alt="Banking App"
+                      width="360"
+                    />
+                  </picture>
+                </div>
+                <div class="portfolio__info">
+                  <h3 class="portfolio__subtitle">Banking App</h3>
+                  <p class="portfolio__category">App</p>
+                </div>
+              </li>
+              <!--  Card-2-Cashless-Payment -->
+              <li class="portfolio__item observer-target observer-delay-2">
+                <div class="portfolio__image-wrapper">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1158px )"
+                      srcset="
+                        ./assets/images/portfolio/cashless_payment_desk.jpg    1x,
+                        ./assets/images/portfolio/cashless_payment_desk@2x.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px )"
+                      srcset="
+                        ./assets/images/portfolio/cashless_payment_tab.jpg    1x,
+                        ./assets/images/portfolio/cashless_payment_tab@2x.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px )"
+                      srcset="
+                        ./assets/images/portfolio/cashless_payment_mob.jpg    1x,
+                        ./assets/images/portfolio/cashless_payment_mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio-img"
+                      src="./assets/images/portfolio/cashless_payment_mob.jpg"
+                      alt="Banking app"
+                      width="360"
+                    />
+                  </picture>
+                </div>
+                <div class="portfolio__info">
+                  <h3 class="portfolio__subtitle">Cashless Payment</h3>
+                  <p class="portfolio__category">Marketing</p>
+                </div>
+              </li>
+              <!-- Card-3-Meditation-App -->
+              <li class="portfolio__item observer-target observer-delay-3">
+                <div class="portfolio__image-wrapper">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1158px )"
+                      srcset="
+                        ./assets/images/portfolio/meditation_app_desk.jpg    1x,
+                        ./assets/images/portfolio/meditation_app_desk@2x.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px )"
+                      srcset="
+                        ./assets/images/portfolio/meditation_app_tab.jpg    1x,
+                        ./assets/images/portfolio/meditation_app_tab@2x.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px )"
+                      srcset="
+                        ./assets/images/portfolio/meditation_app_mob.jpg    1x,
+                        ./assets/images/portfolio/meditation_app_mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio-img"
+                      src="./assets/images/portfolio/meditation_app_mob.jpg"
+                      alt="Banking app"
+                      width="360"
+                    />
+                  </picture>
+                </div>
+                <div class="portfolio__info">
+                  <h3 class="portfolio__subtitle">Meditation App</h3>
+                  <p class="portfolio__category">App</p>
+                </div>
+              </li>
+              <!-- Card-4-Taxi-Service -->
+              <li class="portfolio__item observer-target observer-delay-1">
+                <div class="portfolio__image-wrapper">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1158px )"
+                      srcset="
+                        ./assets/images/portfolio/taxi_service_desk.jpg    1x,
+                        ./assets/images/portfolio/taxi_service_desk@2x.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px )"
+                      srcset="
+                        ./assets/images/portfolio/taxi_service_tab.jpg    1x,
+                        ./assets/images/portfolio/taxi_service_tab@2x.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px )"
+                      srcset="
+                        ./assets/images/portfolio/taxi_service_mob.jpg    1x,
+                        ./assets/images/portfolio/taxi_service_mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio-img"
+                      src="./assets/images/portfolio/taxi_service_mob.jpg"
+                      alt="Banking app"
+                      width="360"
+                    />
+                  </picture>
+                </div>
+                <div class="portfolio__info">
+                  <h3 class="portfolio__subtitle">Taxi Service</h3>
+                  <p class="portfolio__category">Marketing</p>
+                </div>
+              </li>
+              <!-- Card-5-Screen-Illustrations -->
+              <li class="portfolio__item observer-target observer-delay-2">
+                <div class="portfolio__image-wrapper">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1158px )"
+                      srcset="
+                        ./assets/images/portfolio/screen_illustrations_desk.jpg    1x,
+                        ./assets/images/portfolio/screen_illustrations_desk@2x.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px )"
+                      srcset="
+                        ./assets/images/portfolio/screen_illustrations_tab.jpg    1x,
+                        ./assets/images/portfolio/screen_illustrations_tab@2x.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px )"
+                      srcset="
+                        ./assets/images/portfolio/screen_illustrations_mob.jpg    1x,
+                        ./assets/images/portfolio/screen_illustrations_mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio-img"
+                      src="./assets/images/portfolio/screen_illustrations_mob.jpg"
+                      alt="Banking app"
+                      width="360"
+                    />
+                  </picture>
+                </div>
+                <div class="portfolio__info">
+                  <h3 class="portfolio__subtitle">Screen Illustrations</h3>
+                  <p class="portfolio__category">Design</p>
+                </div>
+              </li>
+              <!-- Card-6-Online-Courses -->
+              <li class="portfolio__item observer-target observer-delay-3">
+                <div class="portfolio__image-wrapper">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1158px )"
+                      srcset="
+                        ./assets/images/portfolio/online_courses_desk.jpg    1x,
+                        ./assets/images/portfolio/online_courses_desk@2x.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px )"
+                      srcset="
+                        ./assets/images/portfolio/online_courses_tab.jpg    1x,
+                        ./assets/images/portfolio/online_courses_tab@2x.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px )"
+                      srcset="
+                        ./assets/images/portfolio/online_courses_mob.jpg    1x,
+                        ./assets/images/portfolio/online_courses_mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio-img"
+                      src="src/assets/images/portfolio/online_courses_mob.jpg"
+                      alt="Banking app"
+                      width="360"
+                    />
+                  </picture>
+                </div>
+                <div class="portfolio__info">
+                  <h3 class="portfolio__subtitle">Online Courses</h3>
+                  <p class="portfolio__category">Marketing</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer" id="contacts">
+        <div class="footer__container container">
+          <div class="footer__logo-section">
+            <a class="footer__logo" href="./index.html"
+              >Web<span class="footer__logo--accent">Studio</span></a
+            >
+            <p class="footer__description">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="footer__social-section">
+            <p class="footer__social-title">Social media</p>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a
+                  class="footer__social-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <svg class="footer__social-icon" width="16" height="16">
+                    <use
+                      href="./assets/images/vector-graphics/icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a
+                  class="footer__social-link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <svg class="footer__social-icon" width="16" height="16">
+                    <use
+                      href="./assets/images/vector-graphics/icons.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a
+                  class="footer__social-link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <svg class="footer__social-icon" width="16" height="16">
+                    <use
+                      href="./assets/images/vector-graphics/icons.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a
+                  class="footer__social-link"
+                  href="https://x.com/"
+                  target="_blank"
+                >
+                  <svg class="footer__social-icon" width="16" height="16">
+                    <use
+                      href="./assets/images/vector-graphics/icons.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__subscribe">
+            <p class="footer__subscribe-title">Subscribe</p>
+            <form class="footer__form">
+              <input
+                class="footer__input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+              <button class="footer__button" type="submit">
+                Subscribe
+                <svg class="footer__button-icon" width="20" height="20">
+                  <use
+                    href="./assets/images/vector-graphics/icons.svg#icon-send"
+                  ></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-    <script type="module" src="main.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>

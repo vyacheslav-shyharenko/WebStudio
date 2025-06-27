@@ -1,0 +1,49 @@
+@use '../abstracts' as *;
+
+html {
+  font-size: $v-fs-base;
+  scroll-behavior: smooth;
+}
+
+body {
+  // @include clamp($bp-xs, $bp-desktop, $fs-base, 14px);
+
+  font-family: $v-ff-primary, sans-serif;
+  font-weight: $v-fw-regular;
+  line-height: $v-lh-base;
+  color: $v-text-primary;
+  background-color: $v-bg-primary;
+
+  & button {
+    cursor: pointer;
+  }
+
+  & svg {
+    fill: $v-icon-primary;
+
+    @include transition-fill;
+
+    &:hover {
+      fill: $v-icon-hover;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 320px;
+  padding-inline: $v-padding-md;
+  margin-inline: auto;
+
+  @include mq(tablet) {
+    max-width: 768px;
+  }
+
+  @include mq(desktop) {
+    max-width: 1128px;
+  }
+}
+
+.section {
+  padding: 48px 0;
+}

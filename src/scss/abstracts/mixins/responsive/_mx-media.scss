@@ -1,0 +1,26 @@
+@use "sass:map";
+@use "../../variables/values" as v;
+
+@mixin mq($bp: sm, $type: min, $is-retina: false) {
+  @if map.has-key(v.$breakpoints, $bp) {
+    $width: map.get(v.$breakpoints, $bp);
+
+    @if $type == max {
+      $width: $width - 0.02px;
+    }
+
+    $media: "(#{$type}-width: #{$width})";
+
+    @if $is-retina {
+      $media: "#{$media} and (min-device-pixel-ratio: 2), " +
+        "#{$media} and (min-resolution: 192dpi), " +
+        "#{$media} and (min-resolution: 2dppx)";
+    }
+
+    @media only screen and #{$media} {
+      @content;
+    }
+  } @else {
+    @warn "❗ Breakpoint `#{$bp}` not found in $breakpoints map.";
+  }
+}

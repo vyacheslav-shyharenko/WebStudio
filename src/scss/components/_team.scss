@@ -1,10 +1,4 @@
-@use '../utils/mixins' as mix;
-
-@use '../base/common' as c;
-
-@use '../utils/variables' as v;
-
-@use '../base/typography' as t;
+@use '../abstracts' as *;
 
 .team {
   background-color: #f4f4fd;

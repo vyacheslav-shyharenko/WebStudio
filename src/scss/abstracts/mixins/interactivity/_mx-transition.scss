@@ -1,0 +1,49 @@
+@use "../../functions/f-get-token" as fn;
+
+$propertyAll: fn.get(transition, "all.property");
+$durationAll: fn.get(transition, "all.duration");
+$timing-functionAll: fn.get(transition, "all.timing-function");
+
+$propertyFill: fn.get(transition, "fill.property");
+$durationFill: fn.get(transition, "fill.duration");
+$timing-functionFill: fn.get(transition, "fill.timing-function");
+
+$propertyColor: fn.get(transition, "color.property");
+$durationColor: fn.get(transition, "color.duration");
+$timing-functionColor: fn.get(transition, "color.timing-function");
+
+$propertyBg: fn.get(transition, "background-color.property");
+$durationBg: fn.get(transition, "background-color.duration");
+$timing-functionBg: fn.get(transition, "background-color.timing-function");
+
+$propertyOpacity: fn.get(transition, "opacity.property");
+$durationOpacity: fn.get(transition, "opacity.duration");
+$timing-functionOpacity: fn.get(transition, "opacity.timing-function");
+
+$propertyTransform: fn.get(transition, "transform.property");
+$durationTransform: fn.get(transition, "transform.duration");
+$timing-functionTransform: fn.get(transition, "transform.timing-function");
+
+@mixin transition-color {
+  transition: $propertyColor $durationColor $timing-functionColor;
+}
+
+@mixin transition-bg-color {
+  transition: $propertyBg $durationBg $timing-functionBg;
+}
+
+@mixin transition-all {
+  transition: $propertyAll $durationAll $timing-functionAll;
+}
+
+@mixin transition-fill {
+  transition: $propertyFill $durationFill $timing-functionFill;
+}
+
+@mixin transition-opacity {
+  transition: $propertyOpacity $durationOpacity $timing-functionOpacity;
+}
+
+@mixin transition-transform {
+  transition: $propertyTransform $durationTransform $timing-functionTransform;
+}

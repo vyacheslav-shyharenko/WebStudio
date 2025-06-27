@@ -1,0 +1,290 @@
+@use '../abstracts' as *;
+
+@use '../abstracts' as *;
+
+// & {
+//   background-color: #2e2f42;
+//   padding: 97px 0;
+
+//   @include mix.respond-to(desktop) {
+//     padding: 100px 0;
+//   }
+
+//   &__container {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 15px;
+
+//     @include mix.respond-to(desktop) {
+//       flex-direction: row;
+//       justify-content: space-around;
+//       align-items: start;
+//     }
+//   }
+//   &__logo-section {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 10px;
+
+//     @include mix.respond-to(tablet) {
+//     }
+//   }
+
+//   &__logo {
+//     @extend .logo;
+
+//     position: relative;
+
+//     &::after {
+//       content: '';
+//       position: absolute;
+//       bottom: -5px;
+//       left: 0;
+//       width: 100%;
+//       height: 1px;
+//       background-color: rgb(255, 255, 255);
+//     }
+
+//     &--accent {
+//       color: v.$color-light;
+//     }
+//   }
+
+//   &__description {
+//     color: #f4f4fd;
+//     text-align: left;
+
+//     @include mix.respond-to(tablet) {
+//       max-width: 264px;
+//     }
+//   }
+
+//   &__social-section {
+//     color: #fff;
+//     font-weight: 600;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 10px;
+//   }
+
+//   &__social-list {
+//     display: flex;
+//     gap: 16px;
+//   }
+
+//   &__social-link {
+//     fill: v.$color-primary;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: v.$color-primary;
+//     border-radius: 5px;
+//     padding: 10px;
+//     fill: white;
+
+//     &:hover,
+//     &:focus {
+//       fill: #343534;
+//     }
+//   }
+
+//   &__subscribe {
+//     color: #fff;
+//     font-weight: 600;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 10px;
+//   }
+
+//   &__form {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 16px;
+
+//     @include mix.respond-to(tablet) {
+//       flex-direction: row;
+//     }
+//   }
+
+//   &__input {
+//     background-color: transparent;
+//     border: 1px solid #fff;
+//     outline: none;
+//     border-radius: 4px;
+//     width: 288px;
+//     height: 40px;
+//     font-size: 12px;
+//     line-height: 2;
+//     letter-spacing: 0.04em;
+//     color: #fff;
+//     padding-left: 16px;
+//     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
+//     &::placeholder {
+//       color: #fff;
+//     }
+
+//     @include mix.respond-to(tablet) {
+//       width: 264px;
+//     }
+//   }
+
+//   &__button {
+//     @include mix.button-variant(v.$color-primary, v.$color-hover);
+//     padding: 10px;
+//   }
+
+//   &__button-icon {
+//     fill: #fff;
+//   }
+// }
+
+.footer {
+  background-color: $v-bg-tertiary;
+  color: $v-text-secondary;
+
+  &__container {
+    padding-block: $v-padding-xl;
+
+    @include flex-col-y(xl);
+
+    @include mq(tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    @include mq(desktop) {
+      flex-wrap: nowrap;
+      gap: $v-gap-xl;
+    }
+  }
+
+  &__logo-section {
+    max-width: 264px;
+
+    @include mq(tablet, max) {
+      text-align: center;
+    }
+  }
+  &__logo {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $v-text-accent;
+    margin-bottom: $v-margin-md;
+  }
+  &__logo--accent {
+    color: $v-text-secondary;
+  }
+  &__description {
+    text-align: left;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--cloud);
+  }
+  &__social-section {
+    grid-area: social;
+
+    @include flex-col-y(md);
+
+    @include mq(tablet) {
+      align-items: start;
+    }
+  }
+  &__social-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--white);
+  }
+  &__social-list {
+    @include flex-x(md);
+  }
+  &__social-item {
+    @include frame(40px, 40px, true);
+    background-color: $v-bg-frame;
+  }
+  &__social-link {
+    width: 100%;
+    height: 100%;
+
+    @include transition-bg-color;
+    @include flex-center;
+    @include hover {
+      background-color: $v-bg-hover;
+    }
+  }
+  &__social-icon {
+    width: 24px;
+    height: 24px;
+  }
+  &__subscribe {
+    width: 100%;
+    @include flex-col-y(md);
+
+    @include mq(tablet) {
+      align-items: start;
+    }
+  }
+  &__subscribe-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--white);
+  }
+  &__form {
+    width: 100%;
+    @include flex-col-y(md);
+
+    @include mq(tablet) {
+      flex-direction: row;
+    }
+  }
+  &__input {
+    width: 100%;
+    max-width: 264px;
+
+    @include border(1px);
+    border-radius: 4px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    opacity: 0.3;
+
+    &::placeholder {
+      padding-left: $v-padding-sm;
+      color: $v-text-secondary;
+    }
+  }
+  &__button {
+    border-radius: 4px;
+    padding: 8px 24px;
+
+    background-color: $v-btn-primary;
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--white);
+
+    @include flex-y(md);
+    @include transition-bg-color;
+    @include hover {
+      background-color: $v-btn-hover;
+    }
+  }
+  &__button-icon {
+  }
+}

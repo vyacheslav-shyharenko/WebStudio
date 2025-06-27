@@ -1,22 +1,18 @@
-@use '../utils/mixins' as mix;
-
-@use '../base/common' as c;
-
-@use '../utils/variables' as v;
-
-.benefits {
+@use '../abstracts' as *;
+benefits {
   z-index: 999;
+
   &__list {
     display: grid;
     gap: 25px;
 
-    @include mix.respond-to(tablet) {
+    @include mq(tablet) {
       grid-template-columns: repeat(2, 1fr);
 
       gap: 24px 50px;
     }
 
-    @include mix.respond-to(desktop) {
+    @include mq(desktop) {
       grid-template-columns: repeat(4, 1fr);
     }
   }

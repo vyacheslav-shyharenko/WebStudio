@@ -1,0 +1,6 @@
+@use '../abstracts' as *;
+
+.main {
+  display: grid;
+  grid-area: main;
+}

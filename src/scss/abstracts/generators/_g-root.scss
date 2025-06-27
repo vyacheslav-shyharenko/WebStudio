@@ -1,0 +1,53 @@
+@use "../functions/f-units" as r;
+@use "../mixins/utils/mx-generate-vars" as mx;
+@use "../variables" as v;
+
+:root {
+  // === BREAKPOINTS ===
+  @each $key, $value in v.$breakpoints {
+    @if $value != null and $value != "" {
+      --breakpoint-#{$key}: #{$value};
+    }
+  }
+
+  // === FONT FAMILY ===
+  @each $key, $value in v.$font-families {
+    @if $value != null {
+      --font-family-#{$key}: #{$value};
+    }
+  }
+
+  // === FONT SIZES ===
+  @each $key, $value in v.$font-sizes {
+    @if $value != null {
+      --font-size-#{$key}: #{$value};
+    }
+  }
+
+  // === FONT WEIGHTS ===
+  @each $key, $value in v.$font-weights {
+    @if $value != null {
+      --font-weight-#{$key}: #{$value};
+    }
+  }
+
+  // === LINE HEIGHTS ===
+  @each $key, $value in v.$line-heights {
+    @if $value != null {
+      --line-height-#{$key}: #{$value};
+    }
+  }
+
+  // === SPACING ===
+  @include mx.generate-css-vars(v.$spacing, "spacing");
+
+  // === RADIUS ===
+  @each $key, $value in v.$radii {
+    @if $value != null {
+      --radius-#{$key}: #{$value};
+    }
+  }
+
+  // === COLORS ===
+  @include mx.generate-css-vars(v.$colors, "color");
+}

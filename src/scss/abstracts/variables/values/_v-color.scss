@@ -1,0 +1,55 @@
+@use '../../functions/f-get-token' as token;
+
+// Повна мапа кольорів
+$colors: token.get(color);
+
+// Звичайні SCSS-значення
+
+// Backround
+$bg-primary: token.get(color, 'bg.primary', css);
+$bg-secondary: token.get(color, 'bg.secondary', css);
+$bg-tertiary: token.get(color, 'bg.tertiary', css);
+$bg-frame: token.get(color, 'bg.frame', css);
+$bg-hover: token.get(color, 'bg.hover', css);
+$bg-accent: token.get(color, 'bg.accent', css);
+$bg-overlay: token.get(color, 'bg.overlay', css);
+
+// Button
+$btn-primary: token.get(color, 'button.primary', css);
+$btn-secondary: token.get(color, 'button.secondary', css);
+$btn-tertiary: token.get(color, 'button.tertiary', css);
+$btn-accent: token.get(color, 'button.accent', css);
+$btn-pressed: token.get(color, 'button.pressed', css);
+$btn-hover: token.get(color, 'button.hover', css);
+
+// Icon
+$icon-primary: token.get(color, 'icon.primary', css);
+$icon-secondary: token.get(color, 'icon.secondary', css);
+$icon-tertiary: token.get(color, 'icon.tertiary', css);
+$icon-accent: token.get(color, 'icon.accent', css);
+$icon-hover: token.get(color, 'icon.hover', css);
+$icon-success: token.get(color, 'icon.success', css);
+$icon-error: token.get(color, 'icon.error', css);
+
+// Status
+$status-default: token.get(color, 'status.default', css);
+$status-info: token.get(color, 'status.info', css);
+$status-success: token.get(color, 'status.success', css);
+$status-warning: token.get(color, 'status.warning', css);
+$status-danger: token.get(color, 'status.danger', css);
+
+// T
+
+// Text
+$text-primary: token.get(color, 'text.primary', css);
+$text-secondary: token.get(color, 'text.secondary', css);
+$text-tertiary: token.get(color, 'text.tertiary', css);
+$text-accent: token.get(color, 'text.accent', css);
+$text-hover: token.get(color, 'text.hover', css);
+$text-title: token.get(color, 'text.title', css);
+
+// Scroll-bar
+$scroll-primary: token.get(color, 'scroll.primary', css);
+$scroll-secondary: token.get(color, 'scroll.secondary', css);
+$scroll-tertiary: token.get(color, 'scroll.tertiary', css);
+$scroll-accent: token.get(color, 'scroll.accent', css);
