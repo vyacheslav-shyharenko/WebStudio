@@ -2,21 +2,6 @@
 
 @use '../../abstracts' as *;
 
-body.loading {
-  .main-content {
-    display: none;
-  }
-
-  .loader-wrapper {
-    position: fixed;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    background: $v-bg-overlay;
-    z-index: 9999;
-  }
-}
-
 body.loaded {
   .loader-wrapper {
     display: none;
