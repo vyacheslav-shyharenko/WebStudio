@@ -3,8 +3,6 @@
 @use '../../abstracts' as *;
 
 body.loading {
-  overflow: hidden;
-
   .main-content {
     display: none;
   }
