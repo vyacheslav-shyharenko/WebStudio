@@ -14,6 +14,7 @@ body {
   letter-spacing: 0.02em;
   color: $v-text-primary;
   background-color: $v-bg-primary;
+  overflow-y: scroll;
 
   & button {
     cursor: pointer;
