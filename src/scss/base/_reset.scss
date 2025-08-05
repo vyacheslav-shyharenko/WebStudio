@@ -31,6 +31,11 @@ button {
   cursor: revert;
 }
 
+button {
+  border: transparent;
+  outline: transparent;
+}
+
 /* Remove list styles (bullets/numbers) */
 ol,
 ul,
@@ -61,6 +66,8 @@ table {
 input,
 textarea {
   -webkit-user-select: auto;
+  border: transparent;
+  outline: transparent;
 }
 
 /* revert the 'white-space' property for textarea elements on Safari */
