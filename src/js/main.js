@@ -15,6 +15,13 @@ const observer = new IntersectionObserver(
   }
 );
 
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.body.classList.remove('loading');
+    document.body.classList.add('loaded');
+  }, 500);
+});
+
 document
   .querySelectorAll('.observer-target')
   .forEach(el => observer.observe(el));
