@@ -36,6 +36,12 @@ button {
   outline: transparent;
 }
 
+button,
+input,
+textarea {
+  background-color: transparent;
+}
+
 /* Remove list styles (bullets/numbers) */
 ol,
 ul,
