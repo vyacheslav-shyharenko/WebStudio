@@ -1,19 +1,17 @@
-@forward "./all-css-vars";
+@forward './all-css-vars';
 
-@forward "./var-breakpoint";
+@forward './breakpoints';
 
-@forward "./var-color";
+@forward './colors';
 
-@forward "./var-font-size";
+@forward './font-sizes';
 
-@forward "./var-font-weight";
+@forward './font-weights';
 
-@forward "./var-fonts-family";
+@forward './font-families';
 
-@forward "./var-line-height";
+@forward './line-heights';
 
-@forward "./var-radius";
+@forward './radius';
 
-@forward "./var-spacing";
-
-@forward "./var-transition";
+@forward './spacing';

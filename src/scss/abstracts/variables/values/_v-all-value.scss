@@ -1,17 +1,17 @@
-@use "./v-breakpoint";
+@use './breakpoints';
 
-@use "./v-color";
+@use './colors';
 
-@use "./v-font-size";
+@use './font-sizes';
 
-@use "./v-font-weight";
+@use './font-weights';
 
-@use "./v-fonts-family";
+@use './font-families';
 
-@use "./v-line-height";
+@use './line-heights';
 
-@use "./v-radius";
+@use './radius';
 
-@use "./v-transition";
+@use './spacing';
 
-@use "./v-spacing";
+@use './transition';

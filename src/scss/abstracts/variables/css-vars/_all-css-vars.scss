@@ -1,17 +1,15 @@
-@use "./var-breakpoint";
+@use './breakpoints';
 
-@use "./var-color";
+@use './colors';
 
-@use "./var-font-size";
+@use './font-sizes';
 
-@use "./var-font-weight";
+@use './font-weights';
 
-@use "./var-fonts-family";
+@use './font-families';
 
-@use "./var-line-height";
+@use './line-heights';
 
-@use "./var-radius";
+@use './radius';
 
-@use "./var-transition";
-
-@use "./var-spacing";
+@use './spacing';

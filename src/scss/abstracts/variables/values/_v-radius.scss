@@ -1,9 +1,0 @@
-@use "../../functions/f-get-token" as token;
-
-// Повна мапа радіусів
-$radii: token.get(radius);
-
-// SCSS значення
-$r-sm: token.get(radius, sm);
-$r-md: token.get(radius, md);
-$r-lg: token.get(radius, lg);

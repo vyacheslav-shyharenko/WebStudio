@@ -1,7 +1,0 @@
-@use '../../functions/f-get-token' as css;
-
-// СSS змінні --var()
-
-$v-fw-regular: css.get(font-weight, regular, css);
-$v-fw-medium: css.get(font-weight, medium, css);
-$v-fw-bold: css.get(font-weight, bold, css);

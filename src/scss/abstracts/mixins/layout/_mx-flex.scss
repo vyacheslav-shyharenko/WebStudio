@@ -2,7 +2,7 @@
 
 @use '../../functions/f-units' as u;
 
-@use '../../functions/f-get-token' as fn;
+@use '../../maps' as m;
 
 @mixin flex(
   $justify: null,
@@ -31,22 +31,20 @@
     flex-wrap: $wrap;
   }
 
-  $gap-map: fn.get(spacing, 'gap');
-
   // Якщо передано один gap — застосувати до обох
   @if $gap != null {
-    $value: map.get($gap-map, $gap);
+    $value: map.get(m.$SPACING-GAP, $gap);
     row-gap: $value;
     column-gap: $value;
   }
 
   // Якщо задані окремо — вони мають пріоритет
   @if $row-gap != null {
-    row-gap: map.get($gap-map, $row-gap);
+    row-gap: map.get(m.$SPACING-GAP, $row-gap);
   }
 
   @if $column-gap != null {
-    column-gap: map.get($gap-map, $column-gap);
+    column-gap: map.get(m.$SPACING-GAP, $column-gap);
   }
 }
 

@@ -1,8 +1,0 @@
-@use "../../functions/f-get-token" as css;
-
-// СSS змінні --var()
-
-$v-lh-tight: css.get(line-height, tight, css);
-$v-lh-base: css.get(line-height, base, css);
-$v-lh-relaxed: css.get(line-height, relaxed, css);
-$v-lh-loose: css.get(line-height, loose, css);

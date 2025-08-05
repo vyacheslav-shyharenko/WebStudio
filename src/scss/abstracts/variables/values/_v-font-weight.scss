@@ -1,9 +1,0 @@
-@use "../../functions/f-get-token" as token;
-
-// Повна мапа font-weight
-$font-weights: token.get(font-weight);
-
-// Звичайні SCSS-значення
-$fw-regular: token.get(font-weight, regular);
-$fw-medium: token.get(font-weight, medium);
-$fw-bold: token.get(font-weight, bold);

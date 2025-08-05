@@ -1,9 +1,0 @@
-@use "../../functions/f-get-token" as css;
-
-// СSS змінні --var()
-
-$v-bp-xs: css.get(breakpoint, xs, css);
-$v-bp-mobile: css.get(breakpoint, mobile, css);
-$v-bp-tablet: css.get(breakpoint, tablet, css);
-$v-bp-desktop: css.get(breakpoint, desktop, css);
-$v-bp-xl: css.get(breakpoint, xl, css);

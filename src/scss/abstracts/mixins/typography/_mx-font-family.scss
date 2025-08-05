@@ -1,6 +1,6 @@
-@use "../../tokens/t-tokens" as t;
+@use '../../tokens/t-tokens' as t;
 
-@use "../../functions/f-get-token" as fn;
+@use '../../functions/f-get-token' as fn;
 
 $map: fn.get(font-weight);
 
@@ -9,8 +9,8 @@ $map: fn.get(font-weight);
   @each $label, $weight in $map {
     @font-face {
       font-family: #{$name};
-      src: url("/fonts/#{$name}-#{$label}.woff2") format("woff2"),
-        url("/fonts/#{$name}-#{$label}.woff") format("woff");
+      src: url('/fonts/#{$name}-#{$label}.woff2') format('woff2'),
+        url('/fonts/#{$name}-#{$label}.woff') format('woff');
       font-weight: $weight;
       font-style: $style;
       font-display: swap;

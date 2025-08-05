@@ -1,7 +1,0 @@
-@use "../../functions/f-get-token" as css;
-
-// СSS змінні --var()
-
-$v-r-sm: css.get(radius, sm, css);
-$v-r-md: css.get(radius, md, css);
-$v-r-lg: css.get(radius, lg, css);

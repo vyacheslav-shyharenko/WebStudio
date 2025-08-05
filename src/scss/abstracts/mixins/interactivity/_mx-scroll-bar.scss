@@ -1,4 +1,4 @@
-@use "../../functions/f-get-token" as fn;
+@use '../../variables/values' as v;
 
 @mixin scroll-bar {
   &::-webkit-scrollbar {
@@ -15,13 +15,13 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: fn.get(color, "scroll.primary");
+    background-color: v.$scroll-primary;
     background-clip: content-box;
     border: 5px solid transparent;
     border-radius: 100px;
 
     &:hover {
-      background-color: fn.get(color, "scroll.secondary");
+      background-color: v.$scroll-secondary;
     }
   }
 }
