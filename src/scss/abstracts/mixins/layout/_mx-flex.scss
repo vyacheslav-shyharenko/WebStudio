@@ -4,13 +4,14 @@
 
 @use '../../functions/f-get-token' as fn;
 
-// 🔧 Основний міксин з усіма параметрами
 @mixin flex(
   $justify: null,
   $align: null,
   $direction: null,
   $wrap: null,
-  $gap: null
+  $gap: null,
+  $row-gap: null,
+  $column-gap: null
 ) {
   display: flex;
 
@@ -30,10 +31,22 @@
     flex-wrap: $wrap;
   }
 
+  $gap-map: fn.get(spacing, 'gap');
+
+  // Якщо передано один gap — застосувати до обох
   @if $gap != null {
-    $gap-map: fn.get(spacing, 'gap');
-    $gap-size: map.get($gap-map, $gap);
-    gap: $gap-size;
+    $value: map.get($gap-map, $gap);
+    row-gap: $value;
+    column-gap: $value;
+  }
+
+  // Якщо задані окремо — вони мають пріоритет
+  @if $row-gap != null {
+    row-gap: map.get($gap-map, $row-gap);
+  }
+
+  @if $column-gap != null {
+    column-gap: map.get($gap-map, $column-gap);
   }
 }
 

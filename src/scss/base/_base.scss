@@ -11,6 +11,7 @@ body {
   font-family: $v-ff-primary, sans-serif;
   font-weight: $v-fw-regular;
   line-height: $v-lh-base;
+  letter-spacing: 0.02em;
   color: $v-text-primary;
   background-color: $v-bg-primary;
 
@@ -46,4 +47,15 @@ body {
 
 .section {
   padding: 48px 0;
+}
+
+.observer-target {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.4s ease-in-out, transform 0.7s ease-in-out;
+}
+
+.observer-target.show {
+  opacity: 1;
+  transform: translateY(0);
 }

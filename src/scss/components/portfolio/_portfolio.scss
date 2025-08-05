@@ -1,0 +1,43 @@
+@use '../../abstracts' as *;
+
+.portfolio {
+  // &__container {
+  // }
+  &__title {
+    font-weight: $v-fw-bold;
+    font-size: $v-fs-xl;
+    margin-bottom: $v-margin-xl;
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    gap: $v-gap-md;
+    @include mq(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: $v-gap-md $v-gap-lg;
+    }
+    @include mq(desktop) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &__item {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  }
+  // &__image-wrapper {
+  // }
+  // &__img {
+  // }
+  &__info {
+    padding: $v-padding-lg $v-padding-md;
+
+    @include flex-col-x;
+  }
+  &__subtitle {
+    font-weight: $v-fw-bold;
+    font-size: $v-fs-lg;
+  }
+  // &__category {
+  // }
+}

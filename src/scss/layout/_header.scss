@@ -28,15 +28,12 @@
     font-weight: $v-fw-bold;
     font-size: $v-fs-md;
     line-height: $v-lh-relaxed;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 
     @include transition-color;
 
     &--accent {
       color: $v-text-accent;
-
-      @include transition-color;
     }
   }
 
@@ -48,13 +45,15 @@
 
   &__menu-icon {
     fill: $v-icon-secondary;
+    pointer-events: none;
   }
 
   &__list {
-    margin: 0 auto;
+    column-gap: $v-gap-lg;
 
-    @include flex-x(lg);
+    @include flex-x();
     @include mq(desktop, max) {
+      margin: 0 auto;
     }
 
     @include mq(tablet, max) {
@@ -68,7 +67,6 @@
   &__link {
     display: block;
     font-weight: $v-fw-medium;
-    letter-spacing: 0.02em;
 
     @include transition-color;
     @include hover {
@@ -92,22 +90,19 @@
 
   &__address-list {
     @include mq(tablet) {
-      @include flex-col-y(xs);
+      @include flex-col-y();
+      row-gap: $v-gap-xs;
     }
 
     @include mq(desktop) {
       flex-direction: row;
-      gap: $v-gap-lg;
+      column-gap: $v-gap-lg;
     }
   }
-
-  // &__address-item {
-  // }
 
   &__address-link {
     font-size: $v-fs-xs;
     line-height: $v-lh-relaxed;
-    letter-spacing: 0.04em;
 
     @include transition-color;
     @include hover {

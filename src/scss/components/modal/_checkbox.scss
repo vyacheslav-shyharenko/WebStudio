@@ -1,0 +1,42 @@
+@use '../../abstracts' as *;
+
+.form__checkbox {
+}
+.form__checkbox-input {
+}
+.form__checkbox-label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.48px;
+  color: #8e8f99;
+}
+.form__checkbox-box {
+  display: inline-flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
+.form__checkbox-icon {
+}
+.form__checkbox-text {
+}
+.form__link {
+  display: inline;
+  color: #4d5ae5;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

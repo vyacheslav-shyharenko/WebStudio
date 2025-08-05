@@ -1,0 +1,69 @@
+@use '../../abstracts' as *;
+
+.team {
+  background-color: $v-bg-secondary;
+  // &__container {
+  // }
+
+  &__title {
+    font-weight: $v-fw-bold;
+    font-size: $v-fs-xl;
+    text-align: center;
+    margin-bottom: $v-margin-xl;
+  }
+  &__list {
+    display: grid;
+    gap: $v-gap-md;
+
+    @include mq(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: $v-gap-md $v-gap-lg;
+    }
+    @include mq(desktop) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  &__item {
+    min-width: 0;
+    background-color: $v-bg-primary;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  }
+  &__photo {
+    width: 100%;
+  }
+  &__info {
+    @include flex-col-x(xxs);
+    padding: $v-padding-lg $v-padding-md;
+    text-align: center;
+  }
+  &__name {
+    font-weight: $v-fw-medium;
+    font-size: $v-fs-lg;
+  }
+  // &__position {
+  // }
+  &__social-list {
+    @include flex-x(sm);
+  }
+  &__social-item {
+    @include frame(40px, 40px, true);
+    background-color: $v-bg-tertiary;
+  }
+  &__social-link {
+    width: 100%;
+    height: 100%;
+
+    @include transition-bg-color;
+    @include flex-center;
+
+    @include hover {
+      background-color: $v-bg-hover;
+
+      .team__social-icon {
+        fill: $v-bg-tertiary;
+      }
+    }
+  }
+}

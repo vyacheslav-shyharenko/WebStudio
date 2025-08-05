@@ -35,7 +35,7 @@
             </button>
             <ul class="header__list">
               <li class="header__item">
-                <a class="header__link js-active" href="#start">Studio</a>
+                <a class="header__link js-active" href="./index.html">Studio</a>
               </li>
               <li class="header__item">
                 <a class="header__link js-active" href="#portfolio"
@@ -64,13 +64,7 @@
         </div>
       </header>
       <main class="main">
-        <!-- <section class="hero section" id="start">
-          <h1 class="hero__title">Effective Solutions for Your Business</h1>
-          <button class="hero__button js-open-modal" type="button">
-            Order Service
-          </button>
-        </section> -->
-        <section class="hero section observer-target">
+        <section class="hero section">
           <h1 class="hero__title observer-target observer-delay-1">
             Effective Solutions for Your Business
           </h1>
@@ -121,9 +115,10 @@
                 <h3 class="benefits__subtitle">Analytics</h3>
                 <p class="benefits__text">
                   Data-driven decisions help us stay focused and make measurable
-                  progress toward your business goals.
+                  progress toward your business.
                 </p>
               </li>
+
               <li class="benefits__item observer-target observer-delay-4">
                 <div class="benefits__icon-box">
                   <svg class="benefits__icon" width="64" height="64">
@@ -738,6 +733,216 @@
           </div>
         </div>
       </footer>
+
+      <!-- MODAL -->
+      <div class="modal-overlay">
+        <div class="modal">
+          <!-- Exit Button -->
+          <button class="modal__close-btn" type="button">
+            <svg class="modal__close-icon" width="8" height="8">
+              <use
+                href="./assets/images/vector-graphics/icons.svg#icon-vector"
+              ></use>
+            </svg>
+          </button>
+
+          <p class="modal__title">
+            Leave your contacts and we will call you back
+          </p>
+
+          <!-- Form -->
+          <form class="modal__form form">
+            <!-- Form Field: Name -->
+            <div class="form__group">
+              <label class="form__label" for="user-name">Name</label>
+              <div class="form__field-wrapper">
+                <input
+                  class="form__input"
+                  id="user-name"
+                  name="user-name"
+                  type="text"
+                />
+                <svg class="form__icon" width="18" height="24">
+                  <use
+                    href="./assets/images/vector-graphics/icons.svg#icon-person"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Form Field: Phone -->
+            <div class="form__group">
+              <label class="form__label" for="phone">Phone</label>
+              <div class="form__field-wrapper">
+                <input class="form__input" id="phone" name="phone" type="tel" />
+                <svg class="form__icon" width="18" height="24">
+                  <use
+                    href="./assets/images/vector-graphics/icons.svg#icon-phone"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Form Field: Email -->
+            <div class="form__group">
+              <label class="form__label" for="email">Email</label>
+              <div class="form__field-wrapper">
+                <input
+                  class="form__input"
+                  id="email"
+                  name="email"
+                  type="email"
+                />
+                <svg class="form__icon" width="18" height="24">
+                  <use
+                    href="./assets/images/vector-graphics/icons.svg#icon-email"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Comment -->
+            <div class="form__group">
+              <label class="form__label" for="user-comment">Comment</label>
+              <textarea
+                class="form__textarea"
+                id="user-comment"
+                name="user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form__checkbox">
+              <input
+                class="form__checkbox-input visually-hidden"
+                id="user-privacy"
+                name="user-privacy"
+                type="checkbox"
+                value="true"
+              />
+              <label class="form__checkbox-label" for="user-privacy">
+                <span class="form__checkbox-box">
+                  <svg class="form__checkbox-icon" width="10" height="8">
+                    <use
+                      href="./assets/images/vector-graphics/icons.svg#icon-vector-4"
+                    ></use>
+                  </svg>
+                </span>
+                <span class="form__checkbox-text">
+                  I accept the terms and conditions of the
+                  <a class="form__link" href="#">Privacy Policy</a>
+                </span>
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button class="form__submit btn" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu-overlay js-menu">
+        <div class="mobile-menu">
+          <button
+            class="mobile-menu__close-btn button-exit js-close-menu"
+            type="button"
+          >
+            <svg class="mobile-menu__close-icon" width="8" height="8">
+              <use
+                href="./assets/images/vector-graphics/icons.svg#icon-vector"
+              ></use>
+            </svg>
+          </button>
+
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__nav-list">
+              <li class="mobile-menu__nav-item">
+                <a href="#start" class="mobile-menu__nav-link">Studio</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a href="#portfolio" class="mobile-menu__nav-link">Portfolio</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a href="#contacts" class="mobile-menu__nav-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="mobile-menu__address">
+            <ul class="mobile-menu__address-list">
+              <li class="mobile-menu__address-item">
+                <a class="mobile-menu__address-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu__address-item">
+                <a
+                  class="mobile-menu__address-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mobile-menu__social-list">
+            <li class="mobile-menu__social-item">
+              <a
+                class="mobile-menu__social-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <svg class="mobile-menu__social-icon" width="24" height="24">
+                  <use
+                    href="./assets/images/vector-graphics/icons.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a
+                class="mobile-menu__social-link"
+                href="https://x.com/?lang=uk"
+                target="_blank"
+              >
+                <svg class="mobile-menu__social-icon" width="24" height="24">
+                  <use
+                    href="./assets/images/vector-graphics/icons.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a
+                class="mobile-menu__social-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <svg class="mobile-menu__social-icon" width="24" height="24">
+                  <use
+                    href="./assets/images/vector-graphics/icons.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a
+                class="mobile-menu__social-link"
+                href="https://ua.linkedin.com/"
+                target="_blank"
+              >
+                <svg class="mobile-menu__social-icon" width="24" height="24">
+                  <use
+                    href="./assets/images/vector-graphics/icons.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <script type="module" src="./js/main.js"></script>

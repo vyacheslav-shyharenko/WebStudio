@@ -1,0 +1,87 @@
+@use '../../abstracts' as *;
+
+.hero {
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 72px 0;
+  width: 100%;
+
+  background-image: url('@/assets/images/hero/hero-bg_mob.jpg');
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #2e2f42b5;
+    z-index: -1;
+  }
+
+  @include mq(xs, min, true) {
+    background-image: url('@/assets/images/hero/hero-bg_mob@2x.jpg');
+  }
+
+  @include mq(tablet) {
+    max-width: 768px;
+    padding: 112px 0;
+    background-image: url('@/assets/images/hero/hero-bg_tab.jpg');
+
+    @include mq(tablet, min, true) {
+      background-image: url('@/assets/images/hero/hero-bg_tab@2x.jpg');
+    }
+  }
+
+  @include mq(desktop) {
+    max-width: 1440px;
+    padding: 188px 0;
+    background-image: url('@/assets/images/hero/hero-bg_desk.jpg');
+    @include mq(desktop, min, true) {
+      background-image: url('@/assets/images/hero/hero-bg_desk@2x.jpg');
+    }
+  }
+
+  &__title {
+    color: $v-text-title;
+    max-width: 216px;
+    margin: 0 auto $v-margin-xl auto;
+    text-align: center;
+    font-size: $v-fs-xl;
+    font-weight: $v-fw-bold;
+    line-height: $v-lh-tight;
+    letter-spacing: 0.72px;
+
+    @include mq(tablet) {
+      margin: 0 auto 36px auto;
+      max-width: 496px;
+      font-size: 56px;
+      line-height: 60px;
+      letter-spacing: 1.12px;
+    }
+
+    @include mq(desktop) {
+      margin: 0 auto 48px auto;
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+    padding: $v-padding-xs $v-padding-lg;
+
+    @include button-base;
+
+    border-radius: $v-r-sm;
+    color: $v-text-secondary;
+    background-color: $v-btn-primary;
+    font-weight: $v-fw-medium;
+    letter-spacing: 0.04em;
+
+    @include flex-y(md);
+    @include transition-bg-color;
+    @include hover {
+      background-color: $v-btn-hover;
+    }
+  }
+}

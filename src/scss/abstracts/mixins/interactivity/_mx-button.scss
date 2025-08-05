@@ -1,0 +1,15 @@
+@use '../../variables/css-vars' as v;
+
+@mixin button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: v.$v-btn-primary;
+  color: v.$v-text-secondary;
+
+  text-align: center;
+  text-decoration: none;
+
+  border-radius: v.$v-r-md;
+}
