@@ -37,6 +37,8 @@ ul,
 menu,
 summary {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Firefox: solve issue where nested ordered lists continue numbering from parent (https://bugzilla.mozilla.org/show_bug.cgi?id=1881517) */
