@@ -118,13 +118,7 @@
     }
   }
   &__button {
-    border-radius: $v-r-sm;
-    padding: $v-padding-xs $v-padding-lg;
-
-    background-color: $v-btn-primary;
-
-    font-weight: $v-fw-bold;
-    letter-spacing: 0.04em;
+    @include button-base;
 
     @include flex-y(md);
     @include transition-bg-color;

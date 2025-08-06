@@ -3,13 +3,14 @@
 @mixin button-base {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  padding: v.$v-padding-xs v.$v-padding-lg;
 
   background-color: v.$v-btn-primary;
-  color: v.$v-text-secondary;
+  color: inherit;
 
-  text-align: center;
+  border-radius: v.$v-r-sm;
+
   text-decoration: none;
-
-  border-radius: v.$v-r-md;
+  letter-spacing: 0.04em;
+  font-weight: v.$v-fw-bold;
 }

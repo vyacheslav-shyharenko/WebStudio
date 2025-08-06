@@ -72,11 +72,7 @@
 
     @include button-base;
 
-    border-radius: $v-r-sm;
     color: $v-text-secondary;
-    background-color: $v-btn-primary;
-    font-weight: $v-fw-medium;
-    letter-spacing: 0.04em;
 
     @include flex-y(md);
     @include transition-bg-color;
