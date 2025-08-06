@@ -441,7 +441,7 @@ body svg:hover {
   }
 }
 .header__address-link {
-  font-family: inherit;
+  font-style: normal;
   font-size: var(--font-size-xs);
   line-height: var(--line-height-relaxed);
   transition: color 200ms ease-in-out;
