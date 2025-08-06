@@ -32,6 +32,7 @@ const btnOpenModal = document.querySelector('.js-open-modal');
 const btnCloseModal = document.querySelector('.modal__close-btn');
 
 const mobileOvarlay = document.querySelector('.mobile-menu-overlay');
+const mobileMenu = document.querySelector('.mobile-menu');
 const modalOvarlay = document.querySelector('.modal-overlay');
 
 btnOpen.addEventListener('click', openMobileMenu);
@@ -45,6 +46,7 @@ function openMobileMenu(event) {
 
   if (burgerMenu) {
     mobileOvarlay.classList.add('menu-is-open');
+    mobileMenu.classList.add('menu-is-open');
   }
 }
 
@@ -53,6 +55,7 @@ function closeMobileMenu(event) {
 
   if (exit) {
     mobileOvarlay.classList.remove('menu-is-open');
+    mobileMenu.classList.remove('menu-is-open');
   }
 }
 

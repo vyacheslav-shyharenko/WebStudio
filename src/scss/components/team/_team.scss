@@ -42,8 +42,7 @@
     font-weight: $v-fw-medium;
     font-size: $v-fs-lg;
   }
-  // &__position {
-  // }
+
   &__social-list {
     @include flex-x(sm);
   }
